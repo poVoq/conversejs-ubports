@@ -5,12 +5,89 @@
     <meta charset="utf-8">
     <title>ConverseJS</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="dist/converse.min.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="css/mobilefixes.css" />
     <script src="libsignal/libsignal-protocol.min.js"></script>
+    <script charset="utf-8" src="dist/converse.min.js"></script>
 </head>
 
 <body>
 
+<input name="jid" type="email" id="jid" required="" placeholder="Jabber / XMPP ID" />
+<p></p>
+<input name="password" type="password" id="password" required="" placeholder="Password" />
+<p></p>
+<input name="websocket" type="url" id="websocket" required="" placeholder="wss://xmpp.example.com/ws/" />
+<p></p>
+<input name="bosh" type="url" id="bosh" required="" placeholder="https://xmpp.example.com/bosh/" />
+</form>
+<p></p>
+<button onclick="storeData()" type="button">Store Input!</button>
+<p></p>
+<button onclick="removeData()" type="button">Clear Store!</button>
+<p></p>
+<button onclick="startconversejs()" type="button">Launch ConverJS!</button>
+
 <script  type="text/javascript">
+function storeData(){
+     var inputJid = document.getElementById("jid");
+     sessionStorage.setItem("jid", inputJid.value);
+     var inputPass = document.getElementById("password");
+     sessionStorage.setItem("password", inputPass.value);
+     var inputWs = document.getElementById("websocket");
+     sessionStorage.setItem("websocket", inputWs.value);
+     var inputBosh = document.getElementById("bosh");
+     sessionStorage.setItem("bosh", inputBosh.value);
+     console.log("data stored");
+}
+function removeData(){
+     sessionStorage.removeItem("jid");
+     sessionStorage.removeItem("password");
+     sessionStorage.removeItem("websocket");
+     sessionStorage.removeItem("bosh");
+     console.log("data removed");
+}
+function startconversejs(){
+    
+    var getJid = sessionStorage.getItem("jid");
+    var getPass = sessionStorage.getItem("password");
+    var getWs = sessionStorage.getItem("websocket");
+    var getBosh = sessionStorage.getItem("bosh");
+    
+    converse.initialize({
+        websocket_url: `${getWs}`,
+        enable_smacks: true,
+        bosh_service_url: `${getBosh}`,
+        authentication: 'login',
+        auto_login: true,
+        jid: `${getJid}`,
+        password: `${getPass}`,
+        view_mode: 'mobile',
+        show_controlbox_by_default: true,
+        sticky_controlbox: true,
+        trusted: 'on',
+        allow_registration: false,
+        allow_logout: false,
+        csi_waiting_time: 900,
+        auto_reconnect: true,
+        omemo_default: true,
+        allow_non_roster_messaging: true,
+        allow_chat_pending_contacts: true,
+        muc_show_join_leave: false,
+        show_desktop_notifications: false,
+        message_archiving: 'always',
+        archived_messages_page_size: 10,
+        roster_groups: false,
+        muc_respect_autojoin: false,
+        allow_muc_invitations: false,
+        muc_mention_autocomplete_min_chars: 1,
+        visible_toolbar_buttons: {emoji: false},
+        auto_focus: false,
+        show_send_button: true,
+        theme: 'default'
+    });
+}
+
 </script>
 
 </body>
