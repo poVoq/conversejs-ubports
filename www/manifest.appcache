@@ -1,0 +1,21 @@
+CACHE MANIFEST
+# v0.0.1 - 24-11-2019 13:12
+
+# HTML Cache
+index.html
+
+# Fonts Cache
+
+# CSS Cache
+css/mobilefixes.css
+
+# Images Cache
+css/images/icon-32.png
+css/images/icon-128.png
+
+# JS Cache
+libsignal/libsignal-protocol.min.js
+dist/converse.min.js
+
+NETWORK:
+*
