@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=ConverseJS
+Exec=webapp-container --app-id="conversejs.povoq" $@ www/index.html --maximized
+Icon=assets/conversejs.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
