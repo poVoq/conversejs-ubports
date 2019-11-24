@@ -7,10 +7,9 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 [![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/conversejs.povoq)
 
 ## Known issues
-- Participant list in multi-user-chats (MUCs) opens on joining a group chat and does not work well on small screens.
+- Participant list in multi-user-chats (MUCs) does not work well on small screens.
   - This is a known issue of ConverseJS and is waiting for an upstream fix.
   - Due to this reason the MUC invites option is disabled as it is unusable on mobile screens
-- There is no "Send" button in 1:1 chats. Also upstream issue waiting for a fix. You can press the Enter button on the OSK instead.
 - When re-joining an open group chat, the OSK is automatically triggerd. Needs fix upstream.
 - The @ mentions of MUC partcipants is broken. Needs improvements in mobile view upstream.
 - The the emoji picker in broken. Needs improvements in mobile view upstream. Use the OSK emojis instead.
@@ -19,7 +18,7 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 - There are no push notifications (difficult to implement, see future plans below)
 
 ## Todo
-- [ ] Initial prototype HTML wrapper with some CSS fixes to the ConverseJS mobile view-mode.
+- [x] Initial prototype HTML wrapper with some CSS fixes to the ConverseJS mobile view-mode.
 - [ ] Make nice login and settings landing page with Ubuntu-Touch HTML5 UI toolkit.
 - [ ] Storage of multiple XMPP accounts for easy switching.
 - [ ] XEP-0156: Discovering Alternative XMPP Connection Methods (waiting for next ConverseJS release).
