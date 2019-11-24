@@ -7,9 +7,9 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 [![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/conversejs.povoq)
 
 ## Known issues
-- Participant list in multi-user-chats (MUCs) does not work well on small screens.
+- Participant list in multi-user-chats (MUCs) is very cramped on small screens.
   - This is a known issue of ConverseJS and is waiting for an upstream fix.
-  - Due to this reason the MUC invites option is disabled as it is unusable on mobile screens
+  - Due to this reason the MUC invites option is disabled as it is unusable on some mobile screens
 - When re-joining an open group chat, the OSK is automatically triggerd. Needs fix upstream.
 - The @ mentions of MUC partcipants is broken. Needs improvements in mobile view upstream.
 - The the emoji picker in broken. Needs improvements in mobile view upstream. Use the OSK emojis instead.
