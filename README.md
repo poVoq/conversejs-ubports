@@ -1,6 +1,6 @@
 # ConverseJS for Ubuntu Touch
 
-This is a HTML5 wrapper for the [ConverseJS](https://github.com/conversejs/converse.js/) Jabber / XMPP chat client to un it on  Ubuntu Touch mobile devices. Thanks a lot to the ConverseJS team, they did all the hard work!
+This is a HTML5 wrapper for the [ConverseJS](https://github.com/conversejs/converse.js/) Jabber / XMPP chat client to run it on  Ubuntu Touch mobile devices. Thanks a lot to the ConverseJS team, they did all the hard work!
 
 Please note that this is just a HTML5 wrapper with minimal CSS changes to the ConverseJS mobile view mode. Please report issues related to the actual Javascript XMPP client in the upstream issue tracker linked above.
 
