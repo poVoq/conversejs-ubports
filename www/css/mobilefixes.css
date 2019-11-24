@@ -1,3 +1,54 @@
 /*
 Various CSS hacks to make ConverseJS more usable on small screen devices
 */
+#conversejs.converse-mobile .chatroom .box-flyout {
+  border: inherit;
+}
+
+#conversejs, #conversejs-bg, .converse-fullscreen {
+  --send-button-height: 32px;
+  --occupants-features-display: none;
+}
+
+#conversejs .fa, #conversejs .fab, #conversejs .far, #conversejs .fas, .converse-website .fa, .converse-website .fab, .converse-website .far, .converse-website .fas {
+  font-size: 18px;
+}
+
+#conversejs .chatroom .box-flyout .chatroom-body .occupants ul li.occupant .occupant-nick-badge .occupant-badges, #conversejs.converse-embedded .chatroom .box-flyout .chatroom-body .occupants ul li.occupant .occupant-nick-badge .occupant-badges {
+  display: none;
+}
+
+#conversejs #controlbox .controlbox-section .controlbox-heading__btn {
+  font-size: 1.5em;
+  margin: inherit;
+  min-width: 60px;
+}
+
+#conversejs #controlbox .controlbox-pane .controlbox-padded .change-status {
+  min-width: 60px;
+}
+
+#conversejs .chatbox .sendXMPPMessage .chat-toolbar .fa, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fa:hover, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .far, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .far:hover, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fas, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fas:hover {
+  font-size: var(--font-size-huge);
+}
+
+#conversejs .modal-body {
+  overflow-y: auto;
+  height: auto;
+  max-height: 600px;
+}
+
+#conversejs:not(.converse-embedded) .chatroom .box-flyout .chatbox-navback {
+  flex: 0 0 15%;
+  max-width: 15%;
+}
+
+#conversejs:not(.converse-embedded) .chatroom .box-flyout .chatbox-title {
+  flex: 0 0 55%;
+  max-width: 55%;
+}
+
+#conversejs:not(.converse-embedded) .chatroom .box-flyout .chatbox-buttons {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
