@@ -19,7 +19,7 @@ Please note that this is just a HTML wrapper with minimal CSS changes to the Con
 - There are no push notifications (difficult to implement, see future plans below)
 
 ## Todo
-- [x] Initial prototype HTML wrapper with some CSS fixes to the ConverseJS mobile view-mode.
+- [ ] Initial prototype HTML wrapper with some CSS fixes to the ConverseJS mobile view-mode.
 - [ ] Make nice login and settings landing page with Ubuntu-Touch HTML5 UI toolkit.
 - [ ] Storage of multiple XMPP accounts for easy switching.
 - [ ] XEP-0156: Discovering Alternative XMPP Connection Methods (waiting for next ConverseJS release).
