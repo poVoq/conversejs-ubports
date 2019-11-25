@@ -21,42 +21,48 @@
     <p></p>
     <input name="password" type="password" id="password" required="" placeholder="Password" />
     <p></p>
-    <input name="websocket" type="url" id="websocket" required="" placeholder="wss://xmpp.example.com/ws/" />
+    <button onclick="startconversejs()" type="button"><b>Log in</b></button>
     <p></p>
-    <input name="bosh" type="url" id="bosh" required="" placeholder="https://xmpp.example.com/bosh/" />
+    <H2>Required setting (at least one)</H2>
     <p></p>
-    <button onclick="storeData()" type="button">Store Input!</button>
+    Websocket URL (wss://example.com/ws/)
     <p></p>
-    <button onclick="removeData()" type="button">Clear Store!</button>
+    <input name="websocket" type="url" id="websocket" required="" placeholder="wss://example.com/ws/" />
     <p></p>
-    <button onclick="startconversejs()" type="button">Launch ConverseJS!</button>
+    BOSH URL (https://example.com/bosh/)
+    <p></p>
+    Bosh: <input name="bosh" type="url" id="bosh" required="" placeholder="https://example.com/bosh/" />
+    <p></p>
+    <button onclick="storeData()" type="button">Save in app-storage</button>
+    <p></p>
+    <button onclick="removeData()" type="button">Reset app-storage</button>
+
 </center>
 
 <script  type="text/javascript">
 function storeData(){
-     var inputJid = document.getElementById("jid");
-     sessionStorage.setItem("jid", inputJid.value);
-     var inputPass = document.getElementById("password");
-     sessionStorage.setItem("password", inputPass.value);
      var inputWs = document.getElementById("websocket");
-     sessionStorage.setItem("websocket", inputWs.value);
+     localStorage.setItem("websocket", inputWs.value);
      var inputBosh = document.getElementById("bosh");
-     sessionStorage.setItem("bosh", inputBosh.value);
-     console.log("data stored");
+     localStorage.setItem("bosh", inputBosh.value);
 }
 function removeData(){
      sessionStorage.removeItem("jid");
      sessionStorage.removeItem("password");
-     sessionStorage.removeItem("websocket");
-     sessionStorage.removeItem("bosh");
-     console.log("data removed");
+     localStorage.removeItem("websocket");
+     localStorage.removeItem("bosh");
 }
 function startconversejs(){
+
+    var inputJid = document.getElementById("jid");
+    sessionStorage.setItem("jid", inputJid.value);
+    var inputPass = document.getElementById("password");
+    sessionStorage.setItem("password", inputPass.value);
     
     var getJid = sessionStorage.getItem("jid");
     var getPass = sessionStorage.getItem("password");
-    var getWs = sessionStorage.getItem("websocket");
-    var getBosh = sessionStorage.getItem("bosh");
+    var getWs = localStorage.getItem("websocket");
+    var getBosh = localStorage.getItem("bosh");
     
     converse.initialize({
         websocket_url: `${getWs}`,
