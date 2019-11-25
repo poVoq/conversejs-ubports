@@ -8,12 +8,13 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 
 ## Known issues
 - Participant list in multi-user-chats (MUCs) is very cramped on small screens.
-  - This is a known issue of ConverseJS and is waiting for an upstream fix.
+  - This is a known issue of ConverseJS and is waiting for an upstream improvement.
   - Due to this reason the MUC invites option is disabled as it is unusable on some mobile screens
 - When re-joining an open group chat, the OSK is automatically triggerd. Needs fix upstream.
+- The overlay modals of the connection control box are acting up sometimes, restart app to fix.
 - The @ mentions of MUC partcipants is broken. Needs improvements in mobile view upstream.
 - The the emoji picker in broken. Needs improvements in mobile view upstream. Use the OSK emojis instead.
-- Automatic status changes are disabled as they depend on mouse movement it seems. Upstream issue.
+- Automatic status changes are acting strangely as they depend on mouse movement it seems. Upstream issue.
 - XMPP account passwords are stored in plain-text in the qtwebview's sessionStorage (difficult to fix, help wanted).
 - There are no push notifications (difficult to implement, see future plans below)
 
