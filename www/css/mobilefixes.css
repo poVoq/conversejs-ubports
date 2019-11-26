@@ -12,7 +12,7 @@ and to solve other issues related to running it in a qtwebview container
   font-family: 'ConverseFontAwesomeRegular';
   font-style:normal;
   font-weight:400;
-  src: url('/opt/click.ubuntu.com/conversejs.povoq/0.1/www/dist/webfonts/fa-regular-400.ttf') format('truetype');
+  src: url('/opt/click.ubuntu.com/conversejs.povoq/current/www/dist/webfonts/fa-regular-400.ttf') format('truetype');
 }
 
 #conversejs .fa, #conversejs .fas, .converse-website .fa, .converse-website .fas {
@@ -24,7 +24,7 @@ and to solve other issues related to running it in a qtwebview container
   font-family: 'ConverseFontAwesomeSolid';
   font-style:normal;
   font-weight:900;
-  src: url('/opt/click.ubuntu.com/conversejs.povoq/0.1/www/dist/webfonts/fa-solid-900.ttf') format('truetype');
+  src: url('/opt/click.ubuntu.com/conversejs.povoq/current/www/dist/webfonts/fa-solid-900.ttf') format('truetype');
 }
 
 #conversejs.converse-mobile .chatroom .box-flyout {
