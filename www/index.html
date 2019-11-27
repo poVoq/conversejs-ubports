@@ -59,6 +59,24 @@ function startconversejs(){
     var getWs = localStorage.getItem("websocket");
     var getBosh = localStorage.getItem("bosh");
     
+    var obfuscate = "click.ubuntu.com";
+
+    var FontAwesomeRegular = new FontFace('ConverseFontAwesomeRegular', `url(/opt/${obfuscate}/conversejs.povoq/current/www/dist/webfonts/fa-regular-400.ttf)`, { style: 'normal', weight: 400 });
+
+    var FontAwesomeSolid = new FontFace('ConverseFontAwesomeSolid', `url(/opt/${obfuscate}/conversejs.povoq/current/www/dist/webfonts/fa-solid-900.ttf)`, { style: 'normal', weight: 900 });
+
+    FontAwesomeRegular.load().then(function(loaded_face) {
+        document.fonts.add(loaded_face);
+        document.body.style.fontFamily = '"ConverseFontAwesomeRegular"';
+    }).catch(function(error) {
+    });
+
+    FontAwesomeSolid.load().then(function(loaded_face) {
+        document.fonts.add(loaded_face);
+        document.body.style.fontFamily = '"ConverseFontAwesomeSolid"';
+    }).catch(function(error) {
+    });
+    
     converse.initialize({
         websocket_url: `${getWs}`,
         enable_smacks: true,
@@ -67,7 +85,7 @@ function startconversejs(){
         auto_login: true,
         jid: `${getJid}`,
         password: `${getPass}`,
-        assets_path: '/opt/click.ubuntu.com/conversejs.povoq/current/www/dist/',
+        assets_path: `/opt/${obfuscate}/conversejs.povoq/current/www/dist/`,
         view_mode: 'mobile',
         show_controlbox_by_default: true,
         sticky_controlbox: true,
