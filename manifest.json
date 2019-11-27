@@ -9,7 +9,7 @@
             "desktop":  "conversejs.desktop"
         }
     },
-    "version": "0.1",
+    "version": "0.1.1",
     "maintainer": "poVoq <kris@outmo.de>",
     "framework" : "ubuntu-sdk-16.04"
 }
