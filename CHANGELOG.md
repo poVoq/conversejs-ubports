@@ -8,6 +8,7 @@ v0.1.3
  * Changed size & location of send button
  * Added some padding to chat-toolbar buttons
  * Support for XEP-0070 : Verifying HTTP Requests via XMPP for 2 factor auth.
+ * Reenabled MUC invite input and various participant list sizing fixes
 
 v0.1.2
 ---------------------------
