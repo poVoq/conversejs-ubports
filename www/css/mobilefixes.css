@@ -12,6 +12,7 @@ and to solve other issues related to running it in a qtwebview container
   --send-button-right: 0.5em;
   --send-button-bottom: 1.5em;
   --occupants-features-display: none;
+  --occupants-padding: 0.5em;
 }
 
 #conversejs .chatbox .sendXMPPMessage .chat-textarea {
