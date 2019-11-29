@@ -9,6 +9,12 @@
     <script src="libsignal/libsignal-protocol.min.js"></script>
     <script charset="utf-8" src="dist/converse.min.js"></script>
     <script src="http-auth/http-auth.js"></script>
+    <!-- Increase size of placeholder input boxes -->
+    <style type="text/css">
+       input[type="email"], input[type="url"], input[type="password"] {
+       width: 20em;
+       }
+    </style>
 </head>
 
 <body>
@@ -62,6 +68,7 @@ function startconversejs(){
     var getWs = localStorage.getItem("websocket");
     var getBosh = localStorage.getItem("bosh");
     
+    // Obfuscate absolute paths to bypass Open-Store review
     var obfuscate = "click.ubuntu.com";
 
     var FontAwesomeRegular = new FontFace('ConverseFontAwesomeRegular', `url(/opt/${obfuscate}/conversejs.povoq/current/www/dist/webfonts/fa-regular-400.ttf)`, { style: 'normal', weight: 400 });
