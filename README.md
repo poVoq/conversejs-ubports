@@ -9,7 +9,6 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 ## Known issues
 - Participant list in multi-user-chats (MUCs) is very cramped on small screens.
   - This is a known issue of ConverseJS and is waiting for an upstream improvement.
-  - Due to this reason the MUC invites option is disabled as it is unusable on some mobile screens
 - When re-joining an open group chat, the OSK is automatically triggerd. Needs fix upstream.
 - The overlay modals of the connection control box are acting up sometimes, restart app to fix.
 - The @ mentions of MUC partcipants is broken. Needs improvements in mobile view upstream.
@@ -20,11 +19,13 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 
 ## Todo
 - [x] Initial prototype HTML wrapper with some CSS fixes to the ConverseJS mobile view-mode.
-- [ ] Make nice login and settings landing page with Ubuntu-Touch HTML5 UI toolkit.
-- [ ] Storage of multiple XMPP accounts for easy switching.
 - [ ] XEP-0156: Discovering Alternative XMPP Connection Methods (waiting for next ConverseJS release).
-- [ ] Support for selected ConverseJS community plugins.
-- [ ] Dark theme support.
+- [ ] Support for selected ConverseJS community plugins (voice messages?).
+- [ ] Make nice login and settings landing page with Ubuntu-Touch UI toolkit.
+- [ ] xmpp: url hooks?
+- [ ] Storage of multiple XMPP accounts for easy switching?
+- [ ] Notification support?
+- [ ] Dark theme support?
 
 ## Future plans
 If I can get some help to adapt a Ubports push-notification compatible XEP-0357: Push Notifications Push Service application, I would like to enable this in ConverseJS and might host it together with an Ejabberd XMPP server.
