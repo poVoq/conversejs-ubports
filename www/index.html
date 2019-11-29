@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" media="screen" href="css/mobilefixes.css" />
     <script src="libsignal/libsignal-protocol.min.js"></script>
     <script charset="utf-8" src="dist/converse.min.js"></script>
+    <script src="http-auth/http-auth.js"></script>
 </head>
 
 <body>
@@ -89,6 +90,7 @@ function startconversejs(){
         password: `${getPass}`,
         assets_path: `/opt/${obfuscate}/conversejs.povoq/current/www/dist/`,
         view_mode: 'mobile',
+        whitelisted_plugins: ["http-auth"],
         show_controlbox_by_default: true,
         sticky_controlbox: true,
         trusted: 'on',
