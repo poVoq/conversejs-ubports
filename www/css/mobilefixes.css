@@ -29,6 +29,10 @@ and to solve other issues related to running it in a qtwebview container
   padding-right: 1em;
 }
 
+#conversejs .chatroom .box-flyout .chatroom-body .occupants .occupants-header .hide-occupants {
+  display: none;
+}
+
 #conversejs.converse-mobile .chatroom .box-flyout .chatroom-body .occupants .occupants-heading {
   font-size: var(--font-size-medium);
 }
