@@ -23,6 +23,11 @@ and to solve other issues related to running it in a qtwebview container
   font-size: 18px;
 }
 
+#conversejs .chatroom .sendXMPPMessage .chat-toolbar .fa {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 #conversejs .chatroom .box-flyout .chatroom-body .occupants ul li.occupant .occupant-nick-badge .occupant-badges, #conversejs.converse-embedded .chatroom .box-flyout .chatroom-body .occupants ul li.occupant .occupant-nick-badge .occupant-badges {
   display: none;
 }
