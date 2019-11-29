@@ -28,6 +28,10 @@ and to solve other issues related to running it in a qtwebview container
   padding-right: 1em;
 }
 
+#conversejs.converse-mobile .chatroom .box-flyout .chatroom-body .occupants .occupants-heading {
+  font-size: var(--font-size-medium);
+}
+
 #conversejs .chatroom .box-flyout .chatroom-body .occupants ul li.occupant .occupant-nick-badge .occupant-badges, #conversejs.converse-embedded .chatroom .box-flyout .chatroom-body .occupants ul li.occupant .occupant-nick-badge .occupant-badges {
   display: none;
 }
