@@ -1,6 +1,16 @@
 ConverseJS-ubports Changelog
 ================
 
+v0.1.3
+---------------------------
+ * Added new SVG logo
+ * Added sounds (disabled by default)
+ * Changed size & location of send button
+
+v0.1.2
+---------------------------
+ * minor settings change that should improve performance a bit
+
 v0.1.1 (first release)
 ---------------------------
  * work-around to obfuscate the absolute path restriction
