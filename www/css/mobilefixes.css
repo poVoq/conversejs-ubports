@@ -37,10 +37,6 @@ and to solve other issues related to running it in a qtwebview container
   font-size: var(--font-size-medium);
 }
 
-#conversejs .chatroom .room-invite .invited-contact {
-  width: 60%;
-}
-
 #conversejs .chatroom .box-flyout .chatroom-body .occupants ul li.occupant .occupant-nick-badge .occupant-badges, #conversejs.converse-embedded .chatroom .box-flyout .chatroom-body .occupants ul li.occupant .occupant-nick-badge .occupant-badges {
   display: none;
 }
