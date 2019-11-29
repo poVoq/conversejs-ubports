@@ -6,6 +6,8 @@ v0.1.3
  * Added new SVG logo
  * Added sounds (disabled by default)
  * Changed size & location of send button
+ * Added some padding to chat-toolbar buttons
+ * Support for XEP-0070 : Verifying HTTP Requests via XMPP for 2 factor auth.
 
 v0.1.2
 ---------------------------
