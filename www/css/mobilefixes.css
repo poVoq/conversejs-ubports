@@ -8,8 +8,15 @@ and to solve other issues related to running it in a qtwebview container
 }
 
 #conversejs, #conversejs-bg, .converse-fullscreen {
-  --send-button-height: 32px;
+  --send-button-height: 2.7em;
+  --send-button-right: 0.5em;
+  --send-button-bottom: 1.5em;
   --occupants-features-display: none;
+}
+
+#conversejs .chatbox .sendXMPPMessage .chat-textarea {
+  padding-right: 4.0em;
+  text-align: justify;
 }
 
 #conversejs .fa, #conversejs .fab, #conversejs .far, #conversejs .fas, .converse-website .fa, .converse-website .fab, .converse-website .far, .converse-website .fas {
@@ -32,6 +39,18 @@ and to solve other issues related to running it in a qtwebview container
 
 #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fa, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fa:hover, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .far, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .far:hover, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fas, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fas:hover {
   font-size: var(--font-size-huge);
+}
+
+#conversejs .chatbox .sendXMPPMessage .send-button {
+  bottom: var(--send-button-bottom);
+  border: none;
+  padding: 0.5em;
+  right: var(--send-button-right);
+  height: auto;
+  cursor: pointer;
+  width: auto;
+  left: auto;
+  position: absolute;
 }
 
 #conversejs .modal-body {
