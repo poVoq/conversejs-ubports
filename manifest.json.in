@@ -1,6 +1,6 @@
 {
     "name": "conversejs.povoq",
-    "description": "A simple Hubzilla webapp",
+    "description": "Ubuntu Touch ConverseJS XMPP client",
     "architecture": "@CLICK_ARCH@",
     "title": "ConverseJS",
     "hooks": {
