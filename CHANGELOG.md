@@ -1,6 +1,10 @@
 ConverseJS-ubports Changelog
 ================
 
+v0.2.0 (heavy work in progress)
+---------------------------
+ * rebase app on qt wrapper (based on uPixelfed)
+
 v0.1.3
 ---------------------------
  * Added new SVG logo
