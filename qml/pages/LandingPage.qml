@@ -52,7 +52,7 @@ Page {
 
 		Image {
 			anchors.horizontalCenter: parent.horizontalCenter
-			height: Math.min(_infoPage.width/3, _infoPage.height/3)
+			height: Math.min(landingPage.width/3, landingPage.height/3)
 			width:height
 			source:"../../assets/logo.svg"
 			layer.enabled: true
