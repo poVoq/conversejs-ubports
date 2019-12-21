@@ -18,9 +18,8 @@
 </head>
 
 <body>
-    
+
 <center>
-    <img src="css/Converse128.png">
     <H1>Converse.js</H1>
     <input name="jid" type="email" id="jid" required="" placeholder="Jabber / XMPP ID" />
     <p></p>
@@ -62,12 +61,12 @@ function startconversejs(){
     sessionStorage.setItem("jid", inputJid.value);
     var inputPass = document.getElementById("password");
     sessionStorage.setItem("password", inputPass.value);
-    
+
     var getJid = sessionStorage.getItem("jid");
     var getPass = sessionStorage.getItem("password");
     var getWs = localStorage.getItem("websocket");
     var getBosh = localStorage.getItem("bosh");
-    
+
     // Obfuscate absolute paths to bypass Open-Store review
     var obfuscate = "click.ubuntu.com";
 
@@ -86,7 +85,7 @@ function startconversejs(){
         document.body.style.fontFamily = '"ConverseFontAwesomeSolid"';
     }).catch(function(error) {
     });
-    
+
     converse.initialize({
         websocket_url: `${getWs}`,
         enable_smacks: true,
