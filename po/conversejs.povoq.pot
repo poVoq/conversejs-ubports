@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: conversejs.povoq\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-02 23:47+0000\n"
+"POT-Creation-Date: 2019-12-21 15:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,38 +17,94 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../qml/pages/PrivacyPolicyPage.qml:11 ../qml/pages/LandingPage.qml:51
+msgid "Privacy Policy"
+msgstr ""
+
+#: ../qml/pages/PrivacyPolicyPage.qml:29
+msgid ""
+"<br><b>ConverseJS client</b><br><br>* ConverseJS for Ubuntu Touch is a XMPP "
+"protocol client based on ConverseJS. All communications conducted while "
+"using ConverseJS use the XMPP server of the user account specificed<br>* All "
+"communication of substantive content between ConverseJS for Ubuntu Touch and "
+"any XMPP server is done in secure way, using transport encryption to protect "
+"it. End-to-end encryption using the OMEMO standard is used where possible."
+"<br>* OMEMO private encryption keys are stored in the local-storage of "
+"qWebEngine on the device only.<br>* ConverseJS for Ubuntu Touch is not "
+"responsible for the data processing carried out by any XMPP server<br>* "
+"While logged in, the password of the XMPP account is temporarily stored in "
+"clear-text in the qWebEngine session-storage.<br>* If the 'Keep me logged "
+"in' option is chosen, the password of the XMPP account will be stored on the "
+"device in clear-text in the qWebEngine local-storage.<br><br><b>Push "
+"Notifications</b><br><br>* (not yet implemented) The XMPP server selected by "
+"the user will automatically send push notifications to the UBports push "
+"service trough a application specific push-notification proxy (P2 software). "
+"These notifications are encrypted with the https protocol between the device "
+"and the XMPP server and all further steps.<br>"
+msgstr ""
+
 #: ../qml/pages/ConverseJSWebview.qml:160
 msgid "Login"
 msgstr ""
 
-#: ../qml/pages/LandingPage.qml:25
-msgid "Landing Page"
+#: ../qml/pages/Help.qml:11 ../qml/pages/LandingPage.qml:60
+msgid "Help"
 msgstr ""
 
-#: ../qml/pages/LandingPage.qml:33
-#: ../qml/components/BottomEdgeControlsHeader.qml:74
-msgid "Info"
+#: ../qml/pages/Help.qml:29
+msgid ""
+"<br><b>About this app</b><br><br>* ConverseJS for Ubuntu Touch is a qt QML "
+"wrapper that allows to manage user accounts and client settings that are "
+"passed to a ConverseJS client that runs from locally stored HTML/JS files "
+"inside and embedded browser.<br>* Only minimal layout changes via CSS "
+"overwrites are done to an otherwise unmodified ConverseJS client."
+"<br><br><b>Using ConverseJS</b><br><br>* ConverseJS is a XMPP client written "
+"in Javascript. It runs in an embedded qWebEngine browser based on Chromium."
+"<br>"
 msgstr ""
 
-#: ../qml/pages/LandingPage.qml:70 ../qml/pages/Information.qml:52
-#: conversejs.desktop.in.h:1
-msgid "ConverseJS"
+#: ../qml/pages/LoadingPage.qml:53
+msgid "Loading ConverseJS"
 msgstr ""
 
-#: ../qml/pages/LandingPage.qml:81
-msgid "Enter Http"
+#: ../qml/pages/LandingPage.qml:24
+msgid "XMPP Login"
 msgstr ""
 
-#: ../qml/pages/LandingPage.qml:91
-msgid "Doesn't work"
+#: ../qml/pages/LandingPage.qml:36
+msgid "Change server"
+msgstr ""
+
+#: ../qml/pages/LandingPage.qml:41
+msgid "Change settings"
+msgstr ""
+
+#: ../qml/pages/LandingPage.qml:46 ../qml/pages/Information.qml:17
+msgid "About ConverseJS"
+msgstr ""
+
+#: ../qml/pages/LandingPage.qml:94
+msgid "Username or Jabber ID"
+msgstr ""
+
+#: ../qml/pages/LandingPage.qml:103
+msgid "Password"
+msgstr ""
+
+#: ../qml/pages/LandingPage.qml:141
+msgid "Keep me logged in"
+msgstr ""
+
+#: ../qml/pages/LandingPage.qml:147
+msgid "Log in (stored)"
+msgstr ""
+
+#: ../qml/pages/LandingPage.qml:147
+msgid "Log in"
 msgstr ""
 
 #: ../qml/pages/Information.qml:8
 msgid "About"
-msgstr ""
-
-#: ../qml/pages/Information.qml:17
-msgid "About ConverseJS"
 msgstr ""
 
 #: ../qml/pages/Information.qml:18
@@ -71,16 +127,20 @@ msgstr ""
 msgid "Donate to ConverseJS"
 msgstr ""
 
-#: ../qml/pages/LoadingPage.qml:53
-msgid "Loading ConverseJS"
+#: ../qml/pages/Information.qml:52 conversejs.desktop.in.h:1
+msgid "ConverseJS"
 msgstr ""
 
-#: ../qml/components/dialogs/PromptDialog.qml:25
-msgid "Prompt Action"
+#: ../qml/components/MainWebView.qml:75
+msgid "Copy Link"
 msgstr ""
 
-#: ../qml/components/dialogs/ConfirmDialog.qml:25
-msgid "Confirm Action"
+#: ../qml/components/MainWebView.qml:82
+msgid "Copy Image"
+msgstr ""
+
+#: ../qml/components/MainWebView.qml:88
+msgid "Open in browser"
 msgstr ""
 
 #: ../qml/components/BottomEdgeControlsHeader.qml:47
@@ -95,18 +155,18 @@ msgstr ""
 msgid "Go Back"
 msgstr ""
 
+#: ../qml/components/BottomEdgeControlsHeader.qml:74
+msgid "Info"
+msgstr ""
+
 #: ../qml/components/BottomEdgeControlsHeader.qml:91
 msgid "Change account"
 msgstr ""
 
-#: ../qml/components/MainWebView.qml:75
-msgid "Copy Link"
+#: ../qml/components/dialogs/PromptDialog.qml:25
+msgid "Prompt Action"
 msgstr ""
 
-#: ../qml/components/MainWebView.qml:82
-msgid "Copy Image"
-msgstr ""
-
-#: ../qml/components/MainWebView.qml:88
-msgid "Open in browser"
+#: ../qml/components/dialogs/ConfirmDialog.qml:25
+msgid "Confirm Action"
 msgstr ""
