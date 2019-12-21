@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: conversejs.povoq\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 17:35+0000\n"
+"POT-Creation-Date: 2019-12-21 18:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,15 +43,11 @@ msgid ""
 "and the XMPP server and all further steps.<br>"
 msgstr ""
 
-#: ../qml/pages/ConverseJSWebview.qml:160
-msgid "Login"
+#: ../qml/pages/General_help.qml:11
+msgid "General Help"
 msgstr ""
 
-#: ../qml/pages/Help.qml:11 ../qml/pages/LandingPage.qml:60
-msgid "Help"
-msgstr ""
-
-#: ../qml/pages/Help.qml:29
+#: ../qml/pages/General_help.qml:28
 msgid ""
 "<br><b>About this app</b><br><br>* ConverseJS for Ubuntu Touch is a qt QML "
 "wrapper that allows to manage user accounts and client settings that are "
@@ -63,6 +59,10 @@ msgid ""
 "<br>"
 msgstr ""
 
+#: ../qml/pages/ConverseJSWebview.qml:160
+msgid "Login"
+msgstr ""
+
 #: ../qml/pages/LoadingPage.qml:53
 msgid "Logging into ConverseJS"
 msgstr ""
@@ -71,27 +71,32 @@ msgstr ""
 msgid "Client settings"
 msgstr ""
 
-#: ../qml/pages/Client_settings.qml:28
+#: ../qml/pages/Client_settings.qml:17 ../qml/pages/LandingPage.qml:60
+#: ../qml/pages/Server_settings.qml:17 ../qml/pages/Settings_help.qml:11
+msgid "Help"
+msgstr ""
+
+#: ../qml/pages/Client_settings.qml:40
 msgid "OMEMO by default"
 msgstr ""
 
-#: ../qml/pages/Client_settings.qml:38
+#: ../qml/pages/Client_settings.qml:50
 msgid "Join/Leave MUC messages"
 msgstr ""
 
-#: ../qml/pages/Client_settings.qml:48
+#: ../qml/pages/Client_settings.qml:60
 msgid "Enable activity sounds"
 msgstr ""
 
-#: ../qml/pages/Client_settings.qml:58
+#: ../qml/pages/Client_settings.qml:70
 msgid "Enable Emoji picker"
 msgstr ""
 
-#: ../qml/pages/Client_settings.qml:68
+#: ../qml/pages/Client_settings.qml:80
 msgid "Enable Send button"
 msgstr ""
 
-#: ../qml/pages/Client_settings.qml:78
+#: ../qml/pages/Client_settings.qml:90
 msgid "Desktop Mode"
 msgstr ""
 
@@ -159,20 +164,57 @@ msgstr ""
 msgid "ConverseJS"
 msgstr ""
 
+#: ../qml/pages/Server_help.qml:11
+msgid "Server Help"
+msgstr ""
+
+#: ../qml/pages/Server_help.qml:28
+msgid ""
+"<br><b>Why not port 5222?</b><br><br>* ConverseJS for Ubuntu Touch uses a "
+"pure Javascript client that was designed to run in a web-browser. It "
+"therefore cannot directly connect to port 5222 like other XMPP clients.<br>* "
+"You need to consult with your XMPP server admin regarding the URL of the "
+"Websocket or BOSH connection. Modern XMPP servers usually have it enabled, "
+"but it might not be as simple as the placeholder suggests.<br>* In a future "
+"version (6+) ConverseJS will attempt to auto discover these alternative "
+"connection methods.<br><br><b>Websocket connections</b><br><br>* This is the "
+"recommended connection method.<br>* By default newer Ejabberd servers are "
+"configured to expose it on 'wss://example.com/ws/'. This assumes the server "
+"uses transport encryption. Userwise use 'ws://example.com/ws/'.<br>* You "
+"might have to add the port like this: 'wss://example.com:5280/ws/' or "
+"similar.<br>* Smacks management is enabled by default.<br><br><b>BOSH "
+"connections</b><br><br>* Fallback option for older XMPP servers.<br>* By "
+"default newer Ejabberd servers are configured to expose it on 'https://"
+"example.com/bosh/'. This assumes the server uses transport encryption. "
+"Userwise use 'http://example.com/bosh/'.<br>* For Prosody servers it might "
+"also be: 'http://example.com:5280/http-bind/' or similar.<br>* If both a "
+"Websocket and a BOSH URL is set, the Websocket connection will be used if "
+"possible.<br>"
+msgstr ""
+
 #: ../qml/pages/Server_settings.qml:12
 msgid "Server settings"
 msgstr ""
 
-#: ../qml/pages/Server_settings.qml:29
+#: ../qml/pages/Server_settings.qml:43
 msgid "wss://example.com/ws/"
 msgstr ""
 
-#: ../qml/pages/Server_settings.qml:38
+#: ../qml/pages/Server_settings.qml:52
 msgid "https://example.com/bosh/"
 msgstr ""
 
-#: ../qml/pages/Server_settings.qml:46
+#: ../qml/pages/Server_settings.qml:60
 msgid "Save server settings"
+msgstr ""
+
+#: ../qml/pages/Settings_help.qml:29
+msgid ""
+"<br><b>Client settings</b><br><br>* Various client settings that are passed "
+"to the embedded ConverseJS javascript client.<br>* Any settings change "
+"requires the embedded ConverseJS client to be reloaded.<br><br><b>Desktop "
+"Mode</b><br><br>* (not yet implemented) Switches to 'fullscreen' viewmode "
+"for convergence use.<br>"
 msgstr ""
 
 #: ../qml/components/MainWebView.qml:75

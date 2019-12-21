@@ -10,7 +10,21 @@ Page {
 
     header: PageHeader {
         title: i18n.tr('Server settings')
+
+        trailingActionBar {
+            actions: [
+            Action {
+                text: i18n.tr("Help")
+                iconName: "help"
+                onTriggered: {
+                    mainStack.push(Qt.resolvedUrl("./Server_help.qml"))
+                }
+            }
+            ]
+        }
     }
+
+    property var elemWidth: Math.min( serverSettingsPage.width - units.gu(4), units.gu(50))
 
     ScrollView {
 

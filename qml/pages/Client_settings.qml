@@ -10,6 +10,18 @@ Page {
 
     header: PageHeader {
         title: i18n.tr('Client settings')
+
+        trailingActionBar {
+            actions: [
+            Action {
+                text: i18n.tr("Help")
+                iconName: "help"
+                onTriggered: {
+                    mainStack.push(Qt.resolvedUrl("./Settings_help.qml"))
+                }
+            }
+            ]
+        }
     }
 
     ScrollView {

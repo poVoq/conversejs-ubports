@@ -4,13 +4,12 @@ import Ubuntu.Components 1.3
 import "../components"
 
 Page {
-    id: helpPage
+    id: generalhelpPage
     anchors.fill: parent
 
     header: PageHeader {
-        title: i18n.tr('Help')
+        title: i18n.tr('General Help')
     }
-
 
     ScrollView {
         id: scrollView
@@ -36,8 +35,6 @@ Page {
                 "<br>" +
                 "* ConverseJS is a XMPP client written in Javascript. It runs in an embedded qWebEngine browser based on Chromium.<br>")
             }
-
         }
     }
-
 }

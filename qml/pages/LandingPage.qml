@@ -26,7 +26,7 @@ Page {
             foregroundColor: theme.palette.normal.backgroundText
             backgroundColor: theme.palette.normal.background
         }
-        
+
         leadingActionBar {
             numberOfSlots: 1
             actions: [
@@ -53,14 +53,14 @@ Page {
             }
             ]
         }
-        
+
         trailingActionBar {
             actions: [
             Action {
                 text: i18n.tr("Help")
                 iconName: "help"
                 onTriggered: {
-                    mainStack.push(Qt.resolvedUrl("./Help.qml"))
+                    mainStack.push(Qt.resolvedUrl("./General_help.qml"))
                 }
             }
             ]
@@ -68,7 +68,7 @@ Page {
     }
 
     property var elemWidth: Math.min( landingPage.width - units.gu(4), units.gu(50))
-    
+
     ScrollView {
         id: scrollView
         width: landingPage.width
@@ -105,7 +105,7 @@ Page {
                 width: elemWidth
                 onDisplayTextChanged: LoginPageActions.updateHomeServerByTextField ( displayText )
             }
-            
+
             Rectangle {
                 id: spacerRect
                 width: parent.width
@@ -157,7 +157,7 @@ Page {
                 color: theme.palette.normal.background
                 height: 0.00001
             }
-            
+
         }
     }
 }
