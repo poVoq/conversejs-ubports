@@ -8,7 +8,7 @@ Please note that this is so far just a login wrapper with some CSS changes to th
 
 ## Known issues
 - Pulling up the bottom bar sometimes crashes the app (no idea why)
-- Long press text copy options are broken
+- Long press text copy options and other popup optionss are broken
 - Some Javascript pop-up queries are still with the desktop styling
 - Participant list in multi-user-chats (MUCs) is very cramped on small screens.
   - This is a known issue of ConverseJS and is waiting for an upstream improvement.
@@ -17,13 +17,13 @@ Please note that this is so far just a login wrapper with some CSS changes to th
 - The @ mentions of MUC partcipants is broken. Needs improvements in mobile view upstream.
 - The the emoji picker in broken. Needs improvements in mobile view upstream. Use the OSK emojis instead.
 - Automatic status changes are acting strangely as they depend on mouse movement it seems. Upstream issue.
-- XMPP account passwords are stored in plain-text in the qtwebview's sessionStorage (difficult to fix, help wanted).
+- XMPP account passwords are stored in plain-text in the qtwebengineview's sessionStorage (difficult to fix, help wanted).
 - There are no push notifications (also need server component, see future plans below)
 
 ## Todo
 - [x] Initial prototype qt wrapper with CSS fixes to the ConverseJS mobile view-mode.
 - [ ] XEP-0156: Discovering Alternative XMPP Connection Methods (waiting for next ConverseJS release).
-- [ ] Support for selected ConverseJS community plugins (voice messages?).
+- [ ] Support for selected ConverseJS community plugins (search, voice conference?).
 - [ ] Make nice login and settings landing page with Ubuntu-Touch qt UI toolkit.
 - [ ] xmpp: url hooks to open web-links to MUCs and contacts.
 - [ ] Storage of multiple XMPP accounts for easy switching.
