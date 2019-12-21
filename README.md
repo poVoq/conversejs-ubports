@@ -2,6 +2,8 @@
 
 This is a qt-based wrapper for the [ConverseJS](https://github.com/conversejs/converse.js/) Jabber / XMPP chat client to run it on Ubuntu Touch mobile devices. Thanks a lot to the ConverseJS team, they did all the hard work!
 
+The qt-based wrapper is build upon the uPixelfed app (https://github.com/dark-eye/pixelfed-web) & uMastonauts app (https://gitlab.com/ChristianPauly/uMastodon) with some inspiration from FluffyChat (https://gitlab.com/ChristianPauly/fluffychat).
+
 Please note that this is so far just a login wrapper with some CSS changes to the ConverseJS mobile view mode. Please report issues related to the actual Javascript XMPP client in the upstream issue tracker linked above.
 
 [![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/conversejs.povoq)
@@ -22,6 +24,7 @@ Please note that this is so far just a login wrapper with some CSS changes to th
 
 ## Todo
 - [x] Initial prototype qt wrapper with CSS fixes to the ConverseJS mobile view-mode.
+- [ ] Pass login and settings to HTML page (currently the qml login is just a mockup).
 - [ ] XEP-0156: Discovering Alternative XMPP Connection Methods (waiting for next ConverseJS release).
 - [ ] Support for selected ConverseJS community plugins (search, voice conference?).
 - [ ] Make nice login and settings landing page with Ubuntu-Touch qt UI toolkit.
