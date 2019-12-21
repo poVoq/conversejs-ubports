@@ -30,6 +30,7 @@ Page {
                 "<br>" +
                 "* ConverseJS for Ubuntu Touch is a qt QML wrapper that allows to manage user accounts and client settings that are passed to a ConverseJS client that runs from locally stored HTML/JS files inside and embedded browser.<br>" +
                 "* Only minimal layout changes via CSS overwrites are done to an otherwise unmodified ConverseJS client.<br>" +
+                "* Please be aware that if you chose to keep logged into your XMPP account password will be stored in clear-text on the device!<br>" +
                 "<br>" +
                 "<b>Using ConverseJS</b><br>" +
                 "<br>" +
