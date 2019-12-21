@@ -4,13 +4,12 @@ import Ubuntu.Components 1.3
 import "../components"
 
 Page {
-    id: helpPage
+    id: settingshelpPage
     anchors.fill: parent
 
     header: PageHeader {
         title: i18n.tr('Help')
     }
-
 
     ScrollView {
         id: scrollView
@@ -18,7 +17,7 @@ Page {
         height: parent.height - header.height
         anchors.top: header.bottom
         contentItem: Column {
-            width: helpPage.width
+            width: settingshelpPage.width
 
             Label {
                 anchors.left: parent.left

@@ -17,7 +17,7 @@ Page {
         height: parent.height - header.height
         anchors.top: header.bottom
         contentItem: Column {
-            width: helpPage.width
+            width: generalhelpPage.width
 
             Label {
                 anchors.left: parent.left
