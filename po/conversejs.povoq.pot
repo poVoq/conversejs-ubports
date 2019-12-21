@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: conversejs.povoq\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 15:58+0000\n"
+"POT-Creation-Date: 2019-12-21 17:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,35 @@ msgid ""
 msgstr ""
 
 #: ../qml/pages/LoadingPage.qml:53
-msgid "Loading ConverseJS"
+msgid "Logging into ConverseJS"
+msgstr ""
+
+#: ../qml/pages/Client_settings.qml:12
+msgid "Client settings"
+msgstr ""
+
+#: ../qml/pages/Client_settings.qml:28
+msgid "OMEMO by default"
+msgstr ""
+
+#: ../qml/pages/Client_settings.qml:38
+msgid "Join/Leave MUC messages"
+msgstr ""
+
+#: ../qml/pages/Client_settings.qml:48
+msgid "Enable activity sounds"
+msgstr ""
+
+#: ../qml/pages/Client_settings.qml:58
+msgid "Enable Emoji picker"
+msgstr ""
+
+#: ../qml/pages/Client_settings.qml:68
+msgid "Enable Send button"
+msgstr ""
+
+#: ../qml/pages/Client_settings.qml:78
+msgid "Desktop Mode"
 msgstr ""
 
 #: ../qml/pages/LandingPage.qml:24
