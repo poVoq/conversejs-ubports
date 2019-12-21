@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: conversejs.povoq\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 17:05+0000\n"
+"POT-Creation-Date: 2019-12-21 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,6 +157,22 @@ msgstr ""
 
 #: ../qml/pages/Information.qml:52 conversejs.desktop.in.h:1
 msgid "ConverseJS"
+msgstr ""
+
+#: ../qml/pages/Server_settings.qml:12
+msgid "Server settings"
+msgstr ""
+
+#: ../qml/pages/Server_settings.qml:29
+msgid "wss://example.com/ws/"
+msgstr ""
+
+#: ../qml/pages/Server_settings.qml:38
+msgid "https://example.com/bosh/"
+msgstr ""
+
+#: ../qml/pages/Server_settings.qml:46
+msgid "Save server settings"
 msgstr ""
 
 #: ../qml/components/MainWebView.qml:75
