@@ -1,17 +1,17 @@
 /*
  * <one line to give the program's name and a brief idea of what it does.>
  * Copyright (C) 2019  eran <email>
- * 
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
@@ -50,7 +50,7 @@ Item {
 		Label {
 			id: progressLabel
 			color: theme.palette.normal.backgroundText
-			text: i18n.tr('Loading ConverseJS')
+			text: i18n.tr('Logging into ConverseJS')
 			anchors.centerIn: parent
 			textSize: Label.Large
 		}
@@ -92,7 +92,7 @@ Item {
 			anchors.horizontalCenter: parent.horizontalCenter
 			width:Math.min(parent.width*0.66,units.gu(28))
 			color: UbuntuColors.orange
-			text: "Return to landing page"
+			text: "Return to account page"
 			iconPosition:"left"
 			iconName:"swap"
 			onClicked: {
