@@ -4,6 +4,10 @@ ConverseJS-ubports Changelog
 v0.2.0
 ---------------------------
  * Update to ConverseJS 6.0.1 (see upstream changes)
+ * XEP-0156: Discovering Alternative XMPP Connection support (untested)
+ * Removed some CSS hacks no longer needed + nicer send buttons
+ * Re-enabled participant autocomple (with @ but it is still a bit buggy)
+ * Slightly improved HTML login page & logo
 
 v0.1.3
 ---------------------------

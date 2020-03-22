@@ -7,32 +7,26 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 [![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/conversejs.povoq)
 
 ## Known issues
-- Does not remember login credentials
+- Does not remember login credentials (server setting are saved but not visible).
 - Participant list in multi-user-chats (MUCs) is very cramped on small screens.
   - This is a known issue of ConverseJS and is waiting for an upstream improvement.
-- When re-joining an open group chat, the OSK is automatically triggerd. Needs fix upstream.
-- The overlay modals of the connection control box are acting up sometimes, restart app to fix.
-- The @ mentions of MUC partcipants is broken. Needs improvements in mobile view upstream.
-- The the emoji picker in broken. Needs improvements in mobile view upstream. Use the OSK emojis instead.
-- Automatic status changes are acting strangely as they depend on mouse movement it seems. Upstream issue.
 - XMPP account passwords are stored in plain-text in the qtwebview's sessionStorage (difficult to fix, help wanted).
 - There are no push notifications (difficult to implement, see future plans below)
 
 ## Todo
 - [x] Initial prototype HTML wrapper with some CSS fixes to the ConverseJS mobile view-mode.
-- [x] XEP-0156: Discovering Alternative XMPP Connection Methods (Available since ConverseJS release 6.0.1 but untested).
-- [ ] Make logout functional to enable storing login credentials.
-- [ ] Support for selected ConverseJS community plugins.
-- [ ] Make nice login and settings landing page with Ubuntu-Touch UI toolkit.
+- [x] XEP-0156: Discovering Alternative XMPP Connection Methods (Available since ConverseJS release 6.0.0 but untested).
+- [ ] Make logout functional so that logins can be stored in the app.
+- [ ] Make nice login and settings landing page with HTML UI toolkit.
 - [ ] xmpp: url hooks?
-- [ ] Dark theme support?
+- [ ] Alternative theme support?
 
 ## Future plans
 If I can get some help to adapt a Ubports push-notification compatible XEP-0357: Push Notifications Push Service application, I would like to enable this in ConverseJS and might host it together with an Ejabberd XMPP server.
 
 ## License
 
-Copyright (C) 2020  poVoq
+Copyright (C) 2019 - 2020  poVoq
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.
