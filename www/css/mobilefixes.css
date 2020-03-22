@@ -7,6 +7,10 @@ and to solve other issues related to running it in a qtwebview container
   border: none;
 }
 
+#conversejs .chat-head .chatbox-title {
+    padding-top: 10px;
+}
+
 #conversejs, #conversejs-bg, .converse-fullscreen {
   --occupants-features-display: none;
   --occupants-padding: 0.5em;
