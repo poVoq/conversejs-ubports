@@ -42,6 +42,10 @@ and to solve other issues related to running it in a qtwebview container
   min-width: 60px;
 }
 
+#conversejs #controlbox .controlbox-pane .userinfo .profile {
+    padding-top: 10px;
+}
+
 #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fa, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fa:hover, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .far, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .far:hover, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fas, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fas:hover {
   font-size: var(--font-size-huge);
 }
