@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    
+
 <center>
     <img src="css/Converse128.png">
     <H1>Converse.js</H1>
@@ -62,12 +62,12 @@ function startconversejs(){
     sessionStorage.setItem("jid", inputJid.value);
     var inputPass = document.getElementById("password");
     sessionStorage.setItem("password", inputPass.value);
-    
+
     var getJid = sessionStorage.getItem("jid");
     var getPass = sessionStorage.getItem("password");
     var getWs = localStorage.getItem("websocket");
     var getBosh = localStorage.getItem("bosh");
-    
+
     // Obfuscate absolute paths to bypass Open-Store review
     var obfuscate = "click.ubuntu.com";
 
@@ -86,7 +86,7 @@ function startconversejs(){
         document.body.style.fontFamily = '"ConverseFontAwesomeSolid"';
     }).catch(function(error) {
     });
-    
+
     converse.initialize({
         websocket_url: `${getWs}`,
         enable_smacks: true,
@@ -113,7 +113,6 @@ function startconversejs(){
         muc_fetch_members: false,
         show_desktop_notifications: false,
         play_sounds: false,
-        sounds_path: 'sounds/',
         message_archiving: 'always',
         archived_messages_page_size: 10,
         roster_groups: false,

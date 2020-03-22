@@ -7,6 +7,7 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 [![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/conversejs.povoq)
 
 ## Known issues
+- Does not remember login credentials
 - Participant list in multi-user-chats (MUCs) is very cramped on small screens.
   - This is a known issue of ConverseJS and is waiting for an upstream improvement.
 - When re-joining an open group chat, the OSK is automatically triggerd. Needs fix upstream.
@@ -19,12 +20,11 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 
 ## Todo
 - [x] Initial prototype HTML wrapper with some CSS fixes to the ConverseJS mobile view-mode.
-- [ ] XEP-0156: Discovering Alternative XMPP Connection Methods (waiting for next ConverseJS release).
-- [ ] Support for selected ConverseJS community plugins (voice messages?).
+- [x] XEP-0156: Discovering Alternative XMPP Connection Methods (Available since ConverseJS release 6.0.1 but untested).
+- [ ] Make logout functional to enable storing login credentials.
+- [ ] Support for selected ConverseJS community plugins.
 - [ ] Make nice login and settings landing page with Ubuntu-Touch UI toolkit.
 - [ ] xmpp: url hooks?
-- [ ] Storage of multiple XMPP accounts for easy switching?
-- [ ] Notification support?
 - [ ] Dark theme support?
 
 ## Future plans
@@ -32,7 +32,7 @@ If I can get some help to adapt a Ubports push-notification compatible XEP-0357:
 
 ## License
 
-Copyright (C) 2019  poVoq
+Copyright (C) 2020  poVoq
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.
