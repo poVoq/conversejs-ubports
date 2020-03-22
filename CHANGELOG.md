@@ -1,6 +1,10 @@
 ConverseJS-ubports Changelog
 ================
 
+v0.2.0
+---------------------------
+ * Update to ConverseJS 6.0.1 (see upstream changes)
+
 v0.1.3
 ---------------------------
  * Added new SVG logo
