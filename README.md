@@ -7,7 +7,8 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 [![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/conversejs.povoq)
 
 ## Known issues
-- Does not remember login credentials (server setting are saved but not visible).
+- Server setting are saved but are not visible on restart.
+- Automatic login can only be reset by using UT tweak tool (delete app data).
 - Participant list in multi-user-chats (MUCs) is very cramped on small screens.
   - This is a known issue of ConverseJS and is waiting for an upstream improvement.
 - XMPP account passwords are stored in plain-text in the qtwebview's sessionStorage (difficult to fix, help wanted).
@@ -16,7 +17,7 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 ## Todo
 - [x] Initial prototype HTML wrapper with some CSS fixes to the ConverseJS mobile view-mode.
 - [x] XEP-0156: Discovering Alternative XMPP Connection Methods (Available since ConverseJS release 6.0.0 but untested).
-- [ ] Make logout functional so that logins can be stored in the app.
+- [ ] Make in app logout functional to avoid UT tweak tool use.
 - [ ] Make nice login and settings landing page with HTML UI toolkit.
 - [ ] xmpp: url hooks?
 - [ ] Alternative theme support?

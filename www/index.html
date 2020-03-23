@@ -21,53 +21,75 @@
 
 <center>
     <p></p>
-    <p></p>
     <img src="css/converse_text.png">
     <p></p>
     <input name="jid" type="email" id="jid" required="" placeholder="Jabber / XMPP ID" />
     <p></p>
     <input name="password" type="password" id="password" required="" placeholder="Password" />
     <p></p>
-    <button onclick="startconversejs()" type="button"><b>Log in</b></button>
+    <button onclick="loginTemp()" type="button"><b>Temporary login</b></button>
     <p></p>
+    Or store JID and password in app
     <p></p>
-    <H3>Optional settings:</H3>
+    <button onclick="loginPerm()" type="button">Automatic login</button>
     <p></p>
-    Websocket or BOSH URL of XMPP server
+    <H3>Server settings:</H3>
+    <p></p>
+    Websocket and/or BOSH URL of server
     <p></p>
     <input name="websocket" type="url" id="websocket" required="" placeholder="wss://example.com/ws/" />
     <p></p>
     <input name="bosh" type="url" id="bosh" required="" placeholder="https://example.com/bosh/" />
     <p></p>
-    <button onclick="storeData()" type="button">Save in app-storage</button>
+    <button onclick="storeData()" type="button">Store server connection</button>
     <p></p>
-    <button onclick="removeData()" type="button">Reset app-storage</button>
+    (Use UT-Tweak tool to remove all storage)
     <p></p>
     <a href="https://xmpp-servers.404.city/main.php?recommendation=jix.im" target="_blank">Don't have a XMPP account yet?</a>
 </center>
 
 <script  type="text/javascript">
+// Load permLogin setting
+var getlogin = localStorage.getItem("permLogin");
+if (getlogin) {startconversejs()};
+
+function loginTemp(){
+     var inputJid = document.getElementById("jid");
+     sessionStorage.setItem("jid", inputJid.value);
+     var inputPass = document.getElementById("password");
+     sessionStorage.setItem("password", inputPass.value);
+     startconversejs();
+}
+
+function loginPerm(){
+     var login = true;
+     localStorage.setItem("permLogin", login.value);
+     var inputJid = document.getElementById("jid");
+     localStorage.setItem("jid", inputJid.value);
+     var inputPass = document.getElementById("password");
+     localStorage.setItem("password", inputPass.value);
+     startconversejs();
+}
+
 function storeData(){
      var inputWs = document.getElementById("websocket");
      localStorage.setItem("websocket", inputWs.value);
      var inputBosh = document.getElementById("bosh");
      localStorage.setItem("bosh", inputBosh.value);
 }
-function removeData(){
-     sessionStorage.removeItem("jid");
-     sessionStorage.removeItem("password");
-     localStorage.removeItem("websocket");
-     localStorage.removeItem("bosh");
-}
+
 function startconversejs(){
+    var getlogin = localStorage.getItem("permLogin");
+    // ckeck if permanent login
+    if (getlogin) {
+      var getJid = localStorage.getItem("jid");
+      var getPass = localStorage.getItem("password");
+    } else {
+      var getJid = sessionStorage.getItem("jid");
+      var getPass = sessionStorage.getItem("password");
+    };
 
-    var inputJid = document.getElementById("jid");
-    sessionStorage.setItem("jid", inputJid.value);
-    var inputPass = document.getElementById("password");
-    sessionStorage.setItem("password", inputPass.value);
-
-    var getJid = sessionStorage.getItem("jid");
-    var getPass = sessionStorage.getItem("password");
+    // Load stored server settings
     var getWs = localStorage.getItem("websocket");
     var getBosh = localStorage.getItem("bosh");
 
