@@ -1,5 +1,8 @@
 ConverseJS-ubports Changelog
 ================
+v0.2.1
+---------------------------
+ * Actually enable XEP-0156 (still untested and works only with XML method)
 
 v0.2.0
 ---------------------------
