@@ -27,6 +27,7 @@ If I can get some help to adapt a Ubports push-notification compatible XEP-0357:
 
 ## Credits
 * [ConverseJS](https://github.com/conversejs/converse.js/)
+* LibSignal in Javascript
 * [Bulma](https://bulma.io/)
 * [Bulmaswatch](https://jenil.github.io/bulmaswatch/)
 * [Bulma-switch](https://github.com/Wikiki/bulma-switch)
