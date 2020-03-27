@@ -34,16 +34,8 @@
 
             <a class="navbar-item">
               <div class="buttons">
-                <a class="button is-success modal-button" data-target="modal-account" aria-haspopup="true">
-                  Account settings
-                </a>
-              </div>
-            </a>
-
-            <a class="navbar-item">
-              <div class="buttons">
                 <a class="button is-warning modal-button" data-target="modal-server" aria-haspopup="true">
-                  Server settings
+                  Server-config
                 </a>
               </div>
             </a>
@@ -51,24 +43,23 @@
             <a class="navbar-item">
               <div class="buttons">
                 <a class="button is-light modal-button" data-target="modal-app" aria-haspopup="true">
-                  Application settings
+                  App-config
                 </a>
               </div>
             </a>
+      </div>
 
-        <div class="navbar-item has-dropdown">
-          <a class="navbar-link">
-            Info
-          </a>
-
-          <div class="navbar-dropdown">
+      <div class="navbar-end">
 
             <a class="navbar-item">
-              Help
-            </a>
-
-            <a class="navbar-item">
-              About
+              <div class="buttons is-grouped">
+                <a class="button is-success modal-button" data-target="modal-help" aria-haspopup="true">
+                  Help
+                </a>
+                <a class="button is-info modal-button" data-target="modal-about" aria-haspopup="true">
+                  About
+                </a>
+              </div>
             </a>
 
           </div>
@@ -111,7 +102,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  // Modals for settings
+  // Trigger modals for settings and help
 
   var rootEl = document.documentElement;
   var $modals = getAll('.modal');
@@ -162,29 +153,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <section class="section">
 <div class="container">
-
-  <!-- Account settings modal -->
-    <div id="modal-account" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Account settings</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div class="content">
-            <h1>Hello World</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
-            <h2>Second level</h2>
-            <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
-          </div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success">Save changes</button>
-          <button class="button">Cancel</button>
-        </footer>
-      </div>
-    </div>
 
   <!-- Server settings modal -->
     <div id="modal-server" class="modal">
@@ -277,6 +245,50 @@ document.addEventListener('DOMContentLoaded', function () {
       </footer>
     </div>
   </div>
+
+  <!-- help modal -->
+    <div id="modal-help" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Help</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="content">
+            <h1>Hello World</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+            <h2>Second level</h2>
+            <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button">Close</button>
+        </footer>
+      </div>
+    </div>
+
+    <!-- about modal -->
+      <div id="modal-about" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">About</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <div class="content">
+              <h1>Hello World</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+              <h2>Second level</h2>
+              <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button">Close</button>
+          </footer>
+        </div>
+      </div>
 
 <!-- Main login landing page -->
 <h1 class="title">
