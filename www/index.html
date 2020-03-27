@@ -50,7 +50,7 @@
 
             <a class="navbar-item">
               <div class="buttons">
-                <a class="button is-light">
+                <a class="button is-light modal-button" data-target="modal-ter" aria-haspopup="true">
                   Application settings
                 </a>
               </div>
@@ -105,8 +105,101 @@
     });
 </script>
 
+<script  type="text/javascript">
+'use strict';
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Modals
+
+  var rootEl = document.documentElement;
+  var $modals = getAll('.modal');
+  var $modalButtons = getAll('.modal-button');
+  var $modalCloses = getAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button');
+
+  if ($modalButtons.length > 0) {
+    $modalButtons.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+        rootEl.classList.add('is-clipped');
+        $target.classList.add('is-active');
+      });
+    });
+  }
+
+  if ($modalCloses.length > 0) {
+    $modalCloses.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        closeModals();
+      });
+    });
+  }
+
+  document.addEventListener('keydown', function (event) {
+    var e = event || window.event;
+    if (e.keyCode === 27) {
+      closeModals();
+    }
+  });
+
+  function closeModals() {
+    rootEl.classList.remove('is-clipped');
+    $modals.forEach(function ($el) {
+      $el.classList.remove('is-active');
+    });
+  }
+
+  // Functions
+
+  function getAll(selector) {
+    return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+  }
+
+});
+</script>
+
 <section class="section">
 <div class="container">
+
+  <div id="modal-ter" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Application settings</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <h1>Hello World</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+          <h2>Second level</h2>
+          <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+
+          <div class="field">
+            <label class="label">Theme</label>
+            <p class="control has-icons-left">
+              <span class="select" id="theme">
+                <select>
+                  <option selected>default</option>
+                  <option>concord</option>
+                  <option>redpill</option>
+                </select>
+              </span>
+              <span class="icon is-small is-left">
+                <i class="fas fa-palette"></i>
+              </span>
+            </p>
+          </div>
+
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Save changes</button>
+        <button class="button">Cancel</button>
+      </footer>
+    </div>
+  </div>
 
 <h1 class="title">
 XMPP account:
@@ -174,21 +267,6 @@ Websocket and/or BOSH URL of server
   <p class="help">Format: https://example.com/bosh/</p>
 </div>
 
-    <div class="field">
-      <label class="label">Theme</label>
-      <p class="control has-icons-left">
-        <span class="select" id="theme">
-          <select>
-            <option selected>default</option>
-            <option>concord</option>
-            <option>redpill</option>
-          </select>
-        </span>
-        <span class="icon is-small is-left">
-          <i class="fas fa-palette"></i>
-        </span>
-      </p>
-    </div>
 <div class="control">
   <button onclick="storeData()" class="button is-primary">Store settings</button>
 </div>
