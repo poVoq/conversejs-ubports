@@ -165,10 +165,10 @@ document.addEventListener('DOMContentLoaded', function () {
         <section class="modal-card-body">
           <div class="content">
             <h1 class="title">
-            Connection settings:
+            Connection settings
             </h1>
             <p class="subtitle">
-            Websocket and/or BOSH URL of server
+            Websocket URL to connect to server
             </p>
             <div class="field">
               <div class="control has-icons-left">
@@ -177,8 +177,11 @@ document.addEventListener('DOMContentLoaded', function () {
                   <i class="fas fa-globe"></i>
                 </span>
               </div>
-              <p class="help">Format: wss://example.com/ws/</p>
+              <p class="help">Example format: wss://example.com/ws/</p>
             </div>
+            <p class="subtitle">
+            And/Or as fallback a BOSH URL
+            </p>
             <div class="field">
               <div class="control has-icons-left">
                 <input class="input" name="bosh" type="url" id="bosh" required="" placeholder="BOSH URL">
@@ -186,21 +189,15 @@ document.addEventListener('DOMContentLoaded', function () {
                   <i class="fas fa-globe"></i>
                 </span>
               </div>
-              <p class="help">Format: https://example.com/bosh/</p>
+              <p class="help">Example format: https://example.com/bosh/</p>
             </div>
-
-            <div class="control">
-              <button onclick="storeData()" class="button is-primary">Store settings</button>
-            </div>
-
             <p class="subtitle">
-            (Use UT-Tweak tool to remove all storage)
+            These settings are optional if the server supports XEP-0156(XML). Connecting through port 5222 is not supported.
             </p>
-
           </div>
         </section>
         <footer class="modal-card-foot">
-          <button class="button is-success">Save changes</button>
+          <button onclick="storeData()" class="button is-success">Save changes</button>
           <button class="button">Cancel</button>
         </footer>
       </div>
@@ -216,25 +213,46 @@ document.addEventListener('DOMContentLoaded', function () {
       </header>
       <section class="modal-card-body">
         <div class="content">
-          <h1>Hello World</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
-          <h2>Second level</h2>
-          <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+          <h1>Notifications</h1>
+          <div class="field">
+            <input id="soundNot" type="checkbox" name="soundNot" class="switch is-success">
+            <label for="soundNot">Sound notifications (run app in background)</label>
+          </div>
+
+          <h1>User interface</h1>
+          <div class="field">
+            <input id="rosterGroups" type="checkbox" name="rosterGroups" class="switch is-success">
+            <label for="rosterGroups">Show roster groups (ejabberd)</label>
+          </div>
 
           <div class="field">
-            <label class="label">Theme</label>
+            <input id="desktopMode" type="checkbox" name="desktopMode" class="switch is-danger">
+            <label for="desktopMode">Fullscreen desktop mode (upcoming feature)</label>
+          </div>
+
+          <div class="field">
+            <label class="label">UI theme</label>
             <p class="control has-icons-left">
               <span class="select" id="theme">
                 <select>
                   <option selected>default</option>
                   <option>concord</option>
-                  <option>redpill</option>
                 </select>
               </span>
               <span class="icon is-small is-left">
                 <i class="fas fa-palette"></i>
               </span>
             </p>
+          </div>
+
+          <h1>Other settings</h1>
+          <div class="field">
+            <input id="syncAvail" type="checkbox" name="syncAvail" class="switch is-success">
+            <label for="syncAvail">Sync availability with other clients (buggy)</label>
+          </div>
+          <div class="field">
+            <input id="mucAutojoin" type="checkbox" name="mucAutojoin" class="switch is-success">
+            <label for="mucAutojoin">Auto re-join group chats (slow)</label>
           </div>
 
         </div>
