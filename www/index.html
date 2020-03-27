@@ -310,8 +310,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <!-- Main login landing page -->
 <h1 class="title">
-XMPP account:
+Welcome!
 </h1>
+<p class="subtitle">
+Input account details:
+</p>
 <div class="field">
   <p class="control has-icons-left">
     <input name="jid" class="input" type="email" required="" placeholder="Jabber / XMPP ID">
@@ -336,13 +339,13 @@ XMPP account:
 
 <div class="field">
   <input id="loginAuto" type="checkbox" name="loginAuto" class="switch is-success">
-  <label for="loginAuto">Log in automatically</label>
+  <label for="loginAuto">Automatic login</label>
 </div>
 
 <div class="field is-grouped">
   <p class="control">
     <button onclick="loginTemp()" class="button is-success">
-      Temporary login
+      Login!
     </button>
     </p>
     <button onclick="loginPerm()" class="button is-light">
@@ -350,9 +353,15 @@ XMPP account:
     </button>
   </p>
 </div>
-
-    <p></p>
-    <a href="https://xmpp-servers.404.city/main.php?recommendation=jix.im" target="_blank">Don't have a XMPP account yet?</a>
+<p class="subtitle">
+Warning: Currently auto-login can only be removed by resetting the app with UT-tweak tool! Also make sure you have configured a server!
+</p>
+<p class="subtitle">
+Warning: Stored passwords are saved in clear-text in app! Automatic login only works together with account storage.
+</p>
+<p class="subtitle">
+No XMPP account yet? <a href="https://xmpp-servers.404.city/main.php?recommendation=jix.im" target="_blank">Look here.</a> You might need an external client to register.
+</p>
 
 <script  type="text/javascript">
 // General loading scripts for ConverseJS
