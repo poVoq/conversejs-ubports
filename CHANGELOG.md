@@ -2,8 +2,11 @@ ConverseJS-ubports Changelog
 ================
 v0.2.1
 ---------------------------
+ * Bulmaswatch Ubuntu styled CSS theme for HTML login page (WIP)
  * Actually enable XEP-0156 (still untested and works only with XML method)
- * Disabled status synchronization with other clients
+ * Disabled by default status synchronization with other clients
+ * Added option to switch theme (for now default and concord)
+ * Added further client settings
 
 v0.2.0
 ---------------------------
