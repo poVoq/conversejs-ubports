@@ -25,6 +25,12 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 ## Future plans
 If I can get some help to adapt a Ubports push-notification compatible XEP-0357: Push Notifications Push Service application, I would like to enable this in ConverseJS and might host it together with an Ejabberd XMPP server.
 
+## Credits
+* [ConverseJS](https://github.com/conversejs/converse.js/)
+* [Bulma](https://bulma.io/)
+* [Bulmaswatch](https://jenil.github.io/bulmaswatch/)
+* [Bulma-switch](https://github.com/Wikiki/bulma-switch)
+
 ## License
 
 Copyright (C) 2019 - 2020  poVoq

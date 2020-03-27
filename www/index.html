@@ -7,6 +7,7 @@
     <link type="text/css" rel="stylesheet" media="screen" href="dist/converse.min.css" />
     <link type="text/css" rel="stylesheet" media="screen" href="css/mobilefixes.css" />
     <link rel="stylesheet" href="css/bulmaswatch.min.css">
+    <link rel="stylesheet" href="css/bulma-switch.min.css">
     <link rel="stylesheet" href="css/icons.css">
     <script src="libsignal/libsignal-protocol.min.js"></script>
     <script charset="utf-8" src="dist/converse.min.js"></script>
@@ -15,9 +16,9 @@
 
 <body>
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-white is-fixed-top is-spaced" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://conversejs.org">
+      <a class="navbar-item">
         <img src="css/converse_text.png" width="112" height="28">
       </a>
 
@@ -30,34 +31,46 @@
 
     <div id="navbar" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">
-          Account settings
-        </a>
 
-        <a class="navbar-item">
-          Client settings
-        </a>
+            <a class="navbar-item">
+              <div class="buttons">
+                <a class="button is-success">
+                  Account settings
+                </a>
+              </div>
+            </a>
 
-        <a class="navbar-item">
-          Help
-        </a>
+            <a class="navbar-item">
+              <div class="buttons">
+                <a class="button is-warning">
+                  Server settings
+                </a>
+              </div>
+            </a>
 
-        <a class="navbar-item">
-          About
-        </a>
+            <a class="navbar-item">
+              <div class="buttons">
+                <a class="button is-light">
+                  Application settings
+                </a>
+              </div>
+            </a>
 
-        </div>
+        <div class="navbar-item has-dropdown">
+          <a class="navbar-link">
+            Info
+          </a>
 
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a class="button is-light">
-                Log in
-              </a>
-            </div>
+          <div class="navbar-dropdown">
+
+            <a class="navbar-item">
+              Help
+            </a>
+
+            <a class="navbar-item">
+              About
+            </a>
+
           </div>
         </div>
       </div>
@@ -114,7 +127,18 @@ XMPP account:
     </span>
   </p>
 </div>
-<div class="field is-grouped is-grouped-centered">
+
+<div class="field">
+  <input id="rememberMe" type="checkbox" name="rememberMe" class="switch is-success">
+  <label for="rememberMe">Remember me</label>
+</div>
+
+<div class="field">
+  <input id="loginAuto" type="checkbox" name="loginAuto" class="switch is-success">
+  <label for="loginAuto">Log in automatically</label>
+</div>
+
+<div class="field is-grouped">
   <p class="control">
     <button onclick="loginTemp()" class="button is-success">
       Temporary login
