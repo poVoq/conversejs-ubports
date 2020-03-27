@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+<!-- Bulma navbar -->
   <nav class="navbar is-white is-fixed-top is-spaced" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item">
@@ -34,7 +34,7 @@
 
             <a class="navbar-item">
               <div class="buttons">
-                <a class="button is-success">
+                <a class="button is-success modal-button" data-target="modal-account" aria-haspopup="true">
                   Account settings
                 </a>
               </div>
@@ -42,7 +42,7 @@
 
             <a class="navbar-item">
               <div class="buttons">
-                <a class="button is-warning">
+                <a class="button is-warning modal-button" data-target="modal-server" aria-haspopup="true">
                   Server settings
                 </a>
               </div>
@@ -50,7 +50,7 @@
 
             <a class="navbar-item">
               <div class="buttons">
-                <a class="button is-light modal-button" data-target="modal-ter" aria-haspopup="true">
+                <a class="button is-light modal-button" data-target="modal-app" aria-haspopup="true">
                   Application settings
                 </a>
               </div>
@@ -78,6 +78,7 @@
   </nav>
 
 <script  type="text/javascript">
+// hamburger menu popup
     document.addEventListener('DOMContentLoaded', () => {
 
       // Get all "navbar-burger" elements
@@ -110,7 +111,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  // Modals
+  // Modals for settings
 
   var rootEl = document.documentElement;
   var $modals = getAll('.modal');
@@ -162,7 +163,83 @@ document.addEventListener('DOMContentLoaded', function () {
 <section class="section">
 <div class="container">
 
-  <div id="modal-ter" class="modal">
+  <!-- Account settings modal -->
+    <div id="modal-account" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Account settings</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="content">
+            <h1>Hello World</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+            <h2>Second level</h2>
+            <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Save changes</button>
+          <button class="button">Cancel</button>
+        </footer>
+      </div>
+    </div>
+
+  <!-- Server settings modal -->
+    <div id="modal-server" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Server settings</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="content">
+            <h1 class="title">
+            Connection settings:
+            </h1>
+            <p class="subtitle">
+            Websocket and/or BOSH URL of server
+            </p>
+            <div class="field">
+              <div class="control has-icons-left">
+                <input class="input" name="websocket" type="url" id="websocket" required="" placeholder="Websocket URL">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-globe"></i>
+                </span>
+              </div>
+              <p class="help">Format: wss://example.com/ws/</p>
+            </div>
+            <div class="field">
+              <div class="control has-icons-left">
+                <input class="input" name="bosh" type="url" id="bosh" required="" placeholder="BOSH URL">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-globe"></i>
+                </span>
+              </div>
+              <p class="help">Format: https://example.com/bosh/</p>
+            </div>
+
+            <div class="control">
+              <button onclick="storeData()" class="button is-primary">Store settings</button>
+            </div>
+
+            <p class="subtitle">
+            (Use UT-Tweak tool to remove all storage)
+            </p>
+
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Save changes</button>
+          <button class="button">Cancel</button>
+        </footer>
+      </div>
+    </div>
+
+<!-- Application settings modal -->
+  <div id="modal-app" class="modal">
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
@@ -201,6 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
   </div>
 
+<!-- Main login landing page -->
 <h1 class="title">
 XMPP account:
 </h1>
@@ -242,43 +320,13 @@ XMPP account:
     </button>
   </p>
 </div>
-<h1 class="title">
-Settings:
-</h1>
-<p class="subtitle">
-Websocket and/or BOSH URL of server
-</p>
-<div class="field">
-  <div class="control has-icons-left">
-    <input class="input" name="websocket" type="url" id="websocket" required="" placeholder="Websocket URL">
-    <span class="icon is-small is-left">
-      <i class="fas fa-globe"></i>
-    </span>
-  </div>
-  <p class="help">Format: wss://example.com/ws/</p>
-</div>
-<div class="field">
-  <div class="control has-icons-left">
-    <input class="input" name="bosh" type="url" id="bosh" required="" placeholder="BOSH URL">
-    <span class="icon is-small is-left">
-      <i class="fas fa-globe"></i>
-    </span>
-  </div>
-  <p class="help">Format: https://example.com/bosh/</p>
-</div>
-
-<div class="control">
-  <button onclick="storeData()" class="button is-primary">Store settings</button>
-</div>
-
-<p class="subtitle">
-(Use UT-Tweak tool to remove all storage)
-</p>
 
     <p></p>
     <a href="https://xmpp-servers.404.city/main.php?recommendation=jix.im" target="_blank">Don't have a XMPP account yet?</a>
 
 <script  type="text/javascript">
+// General loading scripts for ConverseJS
+
 // Load permLogin setting
 var getlogin = localStorage.getItem("permLogin");
 if (getlogin) {startconversejs()};
@@ -301,6 +349,7 @@ function loginPerm(){
      startconversejs();
 }
 
+//store settings in localStorage
 function storeData(){
      var inputWs = document.getElementById("websocket");
      localStorage.setItem("websocket", inputWs.value);
@@ -310,6 +359,7 @@ function storeData(){
      localStorage.setItem("theme", inputBosh.value);
 }
 
+//load settings and launch ConverseJS
 function startconversejs(){
     var getlogin = localStorage.getItem("permLogin");
     // ckeck if permanent login
