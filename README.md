@@ -11,7 +11,7 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 - Automatic login can only be reset by using UT tweak tool (delete app data).
 - Participant list in multi-user-chats (MUCs) is very cramped on small screens.
   - This is a known issue of ConverseJS and is waiting for an upstream improvement.
-- XMPP account passwords are stored in plain-text in the qtwebview's sessionStorage (difficult to fix, help wanted).
+- XMPP account passwords are stored in plain-text in the qtwebview's sessionStorage or if autologin is chosen localStorage (difficult to fix, help wanted).
 - There are no push notifications (difficult to implement, see future plans below)
 
 ## Todo
