@@ -274,10 +274,25 @@ document.addEventListener('DOMContentLoaded', function () {
         </header>
         <section class="modal-card-body">
           <div class="content">
-            <h1>Hello World</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
-            <h2>Second level</h2>
-            <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+            <h1>Security considerations</h1>
+            <h2>Password storage in app</h2>
+            <p>Due to current limitations with the implementation (help apprechiated), the account credentials are stored in the app in clear-text. If you log in temporarily without saving the account details, the embedded browser's sessionStorage is utilised to temporarily store the password for reconnection purposes. If you closed the app this session storage is deleted also. If you chose to save your account details in the app, the browser's localStorage is utilized. This means the cleartext password can be found even with the app turned off. However transport encryption will be used to transmit them to your XMPP server. The app does not communicate with any other servers.</p>
+            <h2>Is this a Webapp?</h2>
+            <p>No, this is a HTML5/Javascript app. All files are included in the app and no servers other than the specified XMPP server are contacted by this app.</p>
+            <h2>Encryption with OMEMO</h2>
+            <p>LibSignal/OMEMO is utilized when possible to encrypt all chats end to end. On 1:1 chats it will be enabled automatically. For encrypted group-chats these need to be configured to be invite-only and non-anonymous (you JID needs to be shared). Please note that your private encryption keys are stored in the embedded browser's localStorage and can be retrived from the device.</p>
+            <h1>Server settings</h1>
+            <h2>Why not port 5222?</h2>
+            <p>ConverseJS for Ubuntu Touch uses a pure Javascript client that was designed to run in a web-browser. It therefore cannot directly connect to port 5222 like other XMPP clients. You need to consult with your XMPP server admin regarding the URL of the Websocket or BOSH connection. Modern XMPP servers usually have it enabled, but it might not be as simple as the example suggests. If no URL is specified ConverseJS will attempt to auto discover these alternative connection methods as specified in XEP-0156 (XML methode only).</p>
+            <h2>Websocket connection</h2>
+            <p>This is the recommended connection method. By default newer Ejabberd servers are configured to expose it on 'wss://example.com/ws/'. This assumes the server uses transport encryption. Otherwise use 'ws://example.com/ws/'. You might have to add the port like this: 'wss://example.com:5280/ws/' or similar. Smacks management is enabled by default.</p>
+            <h2>BOSH connection</h2>
+            <p>Fallback option for older XMPP servers. By default newer Ejabberd servers are configured to expose it on 'https://example.com/bosh/'. This assumes the server uses transport encryption. Otherwise use 'http://example.com/bosh/'. For Prosody servers it might also be: 'http://example.com:5280/http-bind/' or similar. If both a Websocket and a BOSH URL is set, the Websocket connection will be used if possible.</p>
+            <h1>Client settings</h1>
+            <h2>Log out to change settings?</h2>
+            <p>Since ConverseJS was never intended to be used as a stand-alone mobile client, various workarounds were necessary to allow changing settings. However these require ConverseJS itself to be not logged in.</p>
+            <h2>No sound notifications?</h2>
+            <p>Ubuntu Touch suspends all activities for apps in the background. If you want to hear sound notifications and in general more consisten behaviour, please disable background suspension for this app with UT-Tweek tool. Note that this may have a significant impact on battery-life.</p>
           </div>
         </section>
         <footer class="modal-card-foot">
