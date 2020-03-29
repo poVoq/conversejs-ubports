@@ -34,16 +34,22 @@
 
             <a class="navbar-item">
               <div class="buttons">
-                <a class="button is-warning modal-button" data-target="modal-server" aria-haspopup="true">
-                  Server-config
+                <a class="button is-warning modal-button has-icons-left" data-target="modal-server" aria-haspopup="true">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-hdd"></i>
+                  </span>
+                  <p>Server-config</p>
                 </a>
               </div>
             </a>
 
             <a class="navbar-item">
               <div class="buttons">
-                <a class="button is-light modal-button" data-target="modal-app" aria-haspopup="true">
-                  App-config
+                <a class="button is-light modal-button has-icons-left" data-target="modal-app" aria-haspopup="true">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-edit"></i>
+                  </span>
+                  <p>App-config</p>
                 </a>
               </div>
             </a>
@@ -53,11 +59,17 @@
 
             <a class="navbar-item">
               <div class="buttons is-grouped">
-                <a class="button is-success modal-button" data-target="modal-help" aria-haspopup="true">
-                  Help
+                <a class="button is-success modal-button has-icons-left" data-target="modal-help" aria-haspopup="true">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-life-ring"></i>
+                  </span>
+                  <p>Help</p>
                 </a>
-                <a class="button is-info modal-button" data-target="modal-about" aria-haspopup="true">
-                  About
+                <a class="button is-info modal-button has-icons-left" data-target="modal-about" aria-haspopup="true">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-question-circle"></i>
+                  </span>
+                  <p>About</p>
                 </a>
               </div>
             </a>
@@ -358,12 +370,18 @@ Input account details:
 
 <div class="field is-grouped">
   <p class="control">
-    <button onclick="loginTemp()" class="button is-success">
-      Login!
+    <button onclick="loginTemp()" class="button is-success has-icons-left">
+      <span class="icon is-small is-left">
+        <i class="fas fa-user"></i>
+      </span>
+      <p>Login</p>
     </button>
     </p>
-    <button onclick="loginPerm()" class="button is-light">
-      Automatic login
+    <button onclick="loginPerm()" class="button is-light has-icons-left">
+      <span class="icon is-small is-left">
+        <i class="fas fa-lock"></i>
+      </span>
+      <p>Automatic login</p>
     </button>
   </p>
 </div>
