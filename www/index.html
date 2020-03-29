@@ -110,11 +110,10 @@
 </script>
 
 <script  type="text/javascript">
+  // Trigger modals for settings and help
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function () {
-
-  // Trigger modals for settings and help
 
   var rootEl = document.documentElement;
   var $modals = getAll('.modal');
@@ -209,8 +208,14 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
         </section>
         <footer class="modal-card-foot">
-          <button onclick="storeData()" class="button is-success">Save changes</button>
-          <button class="button">Cancel</button>
+          <div class="buttons">
+            <a onclick="storeData()" class="button is-success has-icons-left">
+              <span class="icon is-small is-left">
+                <i class="fas fa-save"></i>
+              </span>
+              <p>Save changes</p>
+            </a>
+          </div>
         </footer>
       </div>
     </div>
@@ -270,8 +275,14 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
       </section>
       <footer class="modal-card-foot">
-        <button onclick="storeSettings()" class="button is-success">Save changes</button>
-        <button class="button">Cancel</button>
+        <div class="buttons">
+          <a onclick="storeSettings()" class="button is-success has-icons-left">
+            <span class="icon is-small is-left">
+              <i class="fas fa-save"></i>
+            </span>
+            <p>Save changes</p>
+          </a>
+        </div>
       </footer>
     </div>
   </div>
@@ -444,7 +455,7 @@ function storeSettings(){
      var inputRostergroups = document.getElementById("rostergroups");
      localStorage.setItem("rostergroups", inputRostergroups.value);
      //var inputDesktopmode = document.getElementById("desktopmode");
-     //localStorage.setItem("desktopmode", inputDesktopmode.value);   
+     //localStorage.setItem("desktopmode", inputDesktopmode.value);
      var inputSyncavailability = document.getElementById("syncavailability");
      localStorage.setItem("syncavailability", inputSyncavailability.value);
      var inputMucautojoin = document.getElementById("mucautojoin");
