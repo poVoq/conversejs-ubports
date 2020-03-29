@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
       </section>
       <footer class="modal-card-foot">
-        <button class="button is-success">Save changes</button>
+        <button onclick="storeSettings()" class="button is-success">Save changes</button>
         <button class="button">Cancel</button>
       </footer>
     </div>
@@ -401,10 +401,11 @@ No XMPP account yet? <a href="https://xmpp-servers.404.city/main.php?recommendat
 <script  type="text/javascript">
 // General loading scripts for ConverseJS
 
-// Load permLogin setting
+// Load permLogin setting and if true start
 var getlogin = localStorage.getItem("permLogin");
 if (getlogin) {startconversejs()};
 
+// Save account details temporarily in sessionStorage and start
 function loginTemp(){
      var inputJid = document.getElementById("jid");
      sessionStorage.setItem("jid", inputJid.value);
@@ -413,6 +414,7 @@ function loginTemp(){
      startconversejs();
 }
 
+// Save account details in localStorage and start
 function loginPerm(){
      var login = true;
      localStorage.setItem("permLogin", login.value);
@@ -423,7 +425,7 @@ function loginPerm(){
      startconversejs();
 }
 
-//store settings in localStorage
+//store server settings in localStorage
 function storeData(){
      var inputWs = document.getElementById("websocket");
      localStorage.setItem("websocket", inputWs.value);
@@ -431,6 +433,20 @@ function storeData(){
      localStorage.setItem("bosh", inputBosh.value);
      var inputTheme = document.getElementById("theme");
      localStorage.setItem("theme", inputBosh.value);
+}
+
+//store app settings in localStorage
+function storeSettings(){
+     var inputTheme = document.getElementById("theme");
+     localStorage.setItem("theme", inputTheme.value);
+     var inputSound = document.getElementById("sound");
+     localStorage.setItem("sound", inputSound.value);
+     var inputRostergroups = document.getElementById("rostergroups");
+     localStorage.setItem("rostergroups", inputRostergroups.value);
+     var inputSyncavailability = document.getElementById("syncavailability");
+     localStorage.setItem("syncavailability", inputSyncavailability.value);
+     var inputMucautojoin = document.getElementById("mucautojoin");
+     localStorage.setItem("mucautojoin", inputMucautojoin.value);
 }
 
 //load settings and launch ConverseJS
@@ -445,11 +461,11 @@ function startconversejs(){
       var getPass = sessionStorage.getItem("password");
     };
 
-    // Load stored server settings
+    // Load server settings from local storage
     var getWs = localStorage.getItem("websocket");
     var getBosh = localStorage.getItem("bosh");
 
-    //Load advanced settings
+    //Load app settings from local storage
     var getTheme = localStorage.getItem("theme");
     var getSound = localStorage.getItem("sound");
     var getGroups = localStorage.getItem("rostergroups");
@@ -463,6 +479,7 @@ function startconversejs(){
 
     var FontAwesomeSolid = new FontFace('ConverseFontAwesomeSolid', `url(/opt/${obfuscate}/conversejs.povoq/current/www/dist/webfonts/fa-solid-900.ttf)`, { style: 'normal', weight: 900 });
 
+    // Load fonts with obfuscated paths (not sure why it only works like this)
     FontAwesomeRegular.load().then(function(loaded_face) {
         document.fonts.add(loaded_face);
         document.body.style.fontFamily = '"ConverseFontAwesomeRegular"';
@@ -475,6 +492,7 @@ function startconversejs(){
     }).catch(function(error) {
     });
 
+    // Start ConverseJS
     converse.initialize({
         websocket_url: `${getWs}`,
         enable_smacks: true,
