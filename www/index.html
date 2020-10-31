@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>ConverseJS</title>
     <link type="text/css" rel="stylesheet" media="screen" href="dist/converse.min.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="dist/website.min.css" /> 
     <link type="text/css" rel="stylesheet" media="screen" href="css/mobilefixes.css" />
     <script src="libsignal/libsignal-protocol.min.js"></script>
     <script charset="utf-8" src="dist/converse.min.js"></script>
@@ -23,25 +24,25 @@
     <p></p>
     <img src="css/converse_text.png">
     <p></p>
-    <input name="jid" type="email" id="jid" required="" placeholder="Jabber / XMPP ID" />
+    <input name="jid" type="email" class="form-control" id="jid" required="" placeholder="Jabber / XMPP ID" />
     <p></p>
-    <input name="password" type="password" id="password" required="" placeholder="Password" />
+    <input name="password" type="password" class="form-control" id="password" required="" placeholder="Password" />
     <p></p>
-    <button onclick="loginTemp()" type="button"><b>Temporary login</b></button>
+    <button onclick="loginTemp()" class="btn btn-primary" type="button"><b>Temporary login</b></button>
     <p></p>
     Or store JID and password in app
     <p></p>
-    <button onclick="loginPerm()" type="button">Automatic login</button>
+    <button onclick="loginPerm()" class="btn btn-secondary" type="button">Automatic login</button>
     <p></p>
     <H3>Server settings:</H3>
     <p></p>
     Websocket and/or BOSH URL of server
     <p></p>
-    <input name="websocket" type="url" id="websocket" required="" placeholder="wss://example.com/ws/" />
+    <input name="websocket" type="url" class="form-control" id="websocket" required="" placeholder="wss://example.com/ws/" />
     <p></p>
-    <input name="bosh" type="url" id="bosh" required="" placeholder="https://example.com/bosh/" />
+    <input name="bosh" type="url" class="form-control" id="bosh" required="" placeholder="https://example.com/bosh/" />
     <p></p>
-    <button onclick="storeData()" type="button">Store server connection</button>
+    <button onclick="storeData()" class="btn btn-secondary" type="button">Store server connection</button>
     <p></p>
     (Use UT-Tweak tool to remove all storage)
     <p></p>
