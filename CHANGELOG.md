@@ -1,5 +1,10 @@
 ConverseJS-ubports Changelog
 ================
+v0.3.0 (unreleased)
+---------------------------
+ * Upgrade to ConverseJS 7.0dev (unreleased)
+ * Login page styling with Bootstrap4 (from ConverseJS /dist)
+ 
 v0.2.1
 ---------------------------
  * Actually enable XEP-0156 (still untested and works only with XML method)
