@@ -3,7 +3,6 @@
     "policy_groups": [
         "webview",
         "content_exchange",
-        "location",
         "networking"
     ],
     "policy_version": 16.04
