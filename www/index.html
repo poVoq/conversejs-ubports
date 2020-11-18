@@ -9,7 +9,6 @@
     <link type="text/css" rel="stylesheet" media="screen" href="css/mobilefixes.css" />
     <script src="libsignal/libsignal-protocol.min.js"></script>
     <script charset="utf-8" src="dist/converse.min.js"></script>
-    <script src="http-auth/http-auth.js"></script>
     <!-- Increase size of placeholder input boxes -->
     <style type="text/css">
        input[type="email"], input[type="url"], input[type="password"] {
@@ -116,17 +115,15 @@ function startconversejs(){
         websocket_url: `${getWs}`,
         enable_smacks: true,
         bosh_service_url: `${getBosh}`,
-        discover_connection_methods: true,
         authentication: 'login',
         auto_login: true,
         jid: `${getJid}`,
         password: `${getPass}`,
         assets_path: `/opt/${obfuscate}/conversejs.povoq/current/www/dist/`,
         view_mode: 'mobile',
-        whitelisted_plugins: ["http-auth"],
         show_controlbox_by_default: true,
         sticky_controlbox: true,
-        trusted: 'on',
+        allow_user_trust_override: false,
         allow_registration: false,
         allow_logout: false,
         csi_waiting_time: 900,
@@ -135,7 +132,7 @@ function startconversejs(){
         allow_non_roster_messaging: true,
         allow_chat_pending_contacts: true,
         send_chat_state_notifications: false,
-        muc_fetch_members: false,
+        notify_nicknames_without_references: true,
         show_desktop_notifications: false,
         play_sounds: false,
         message_archiving: 'always',
@@ -145,11 +142,9 @@ function startconversejs(){
         hide_muc_participants: true,
         allow_muc_invitations: true,
         muc_mention_autocomplete_min_chars: 0,
-        muc_mention_autocomplete_filter: 'contains',
+        muc_mention_autocomplete_filter: 'starts_with',
         muc_mention_autocomplete_show_avatar: true,
-        visible_toolbar_buttons: {emoji: false},
         auto_focus: false,
-        show_send_button: true,
         synchronize_availability: false,
         theme: 'default'
     });

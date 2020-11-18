@@ -3,47 +3,39 @@ Various CSS hacks to make ConverseJS more usable on small screen devices
 and to solve other issues related to running it in a qtwebview container
 */
 
-#conversejs.converse-mobile .chatroom .box-flyout {
-  border: none;
-}
-
-#conversejs .chat-head .chatbox-title {
+/* Add a little padding to top of controlbox */
+#conversejs #controlbox .controlbox-pane .userinfo .profile {
     padding-top: 10px;
 }
 
+/* Remove hats display from MUC partificant list */
 #conversejs, #conversejs-bg, .converse-fullscreen {
   --occupants-features-display: none;
   --occupants-padding: 0.5em;
-}
-
-#conversejs .fa, #conversejs .fab, #conversejs .far, #conversejs .fas, .converse-website .fa, .converse-website .fab, .converse-website .far, .converse-website .fas {
-  font-size: 18px;
-}
-
-#conversejs .chatroom .box-flyout .chatroom-body .occupants .occupants-header .hide-occupants {
-  display: none;
-}
-
-#conversejs.converse-mobile .chatroom .box-flyout .chatroom-body .occupants .occupants-heading {
-  font-size: var(--font-size-medium);
 }
 
 #conversejs .chatroom .box-flyout .chatroom-body .occupants ul li.occupant .occupant-nick-badge .occupant-badges, #conversejs.converse-embedded .chatroom .box-flyout .chatroom-body .occupants ul li.occupant .occupant-nick-badge .occupant-badges {
   display: none;
 }
 
+/* Remove 'x' button from MUC participant list */
+#conversejs .chatroom .box-flyout .chatroom-body .occupants .occupants-header .hide-occupants {
+  display: none;
+}
+
+/* Increase icon button size in various places */
+#conversejs .fa, #conversejs .fab, #conversejs .far, #conversejs .fas, .converse-website .fa, .converse-website .fab, .converse-website .far, .converse-website .fas {
+  font-size: 18px;
+}
+
+#conversejs.converse-mobile .chatroom .box-flyout .chatroom-body .occupants .occupants-heading {
+  font-size: var(--font-size-medium);
+}
+
 #conversejs #controlbox .controlbox-section .controlbox-heading__btn {
   font-size: 1.5em;
   margin: inherit;
   min-width: 60px;
-}
-
-#conversejs #controlbox .controlbox-pane .controlbox-padded .change-status {
-  min-width: 60px;
-}
-
-#conversejs #controlbox .controlbox-pane .userinfo .profile {
-    padding-top: 10px;
 }
 
 #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fa, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fa:hover, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .far, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .far:hover, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fas, #conversejs .chatbox .sendXMPPMessage .chat-toolbar .fas:hover {

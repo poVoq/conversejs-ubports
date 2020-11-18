@@ -1,4 +1,4 @@
 {
-  "template": "pure",
+  "builder": "pure",
   "kill": "webapp-container*"
 }
