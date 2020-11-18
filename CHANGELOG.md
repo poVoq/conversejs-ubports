@@ -3,8 +3,7 @@ ConverseJS-ubports Changelog
 v0.3.0 (unreleased)
 ---------------------------
  * Upgrade to ConverseJS 7.0
- ** Changelog upstream 7.0: https://github.com/conversejs/converse.js/releases/tag/v7.0.0
- ** Lots of changes, but now with support for ad-hoc commands
+ * Changelog upstream 7.0: https://github.com/conversejs/converse.js/releases/tag/v7.0.0
  * Login page styling with Bootstrap4
  
 v0.2.1
