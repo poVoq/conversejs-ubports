@@ -36,14 +36,14 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		177: 0
+/******/ 		178: 0
 /******/ 	};
 /******/
 /******/
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"0":"locales/dayjs/af","1":"locales/dayjs/ar","2":"locales/dayjs/ar-dz","3":"locales/dayjs/ar-kw","4":"locales/dayjs/ar-ly","5":"locales/dayjs/ar-ma","6":"locales/dayjs/ar-sa","7":"locales/dayjs/ar-tn","8":"locales/dayjs/az","9":"locales/dayjs/be","10":"locales/dayjs/bg","11":"locales/dayjs/bi","12":"locales/dayjs/bm","13":"locales/dayjs/bn","14":"locales/dayjs/bo","15":"locales/dayjs/br","16":"locales/dayjs/bs","17":"locales/dayjs/ca","18":"locales/dayjs/cs","19":"locales/dayjs/cv","20":"locales/dayjs/cy","21":"locales/dayjs/da","22":"locales/dayjs/de","23":"locales/dayjs/de-at","24":"locales/dayjs/de-ch","25":"locales/dayjs/dv","26":"locales/dayjs/el","27":"locales/dayjs/en","28":"locales/dayjs/en-SG","29":"locales/dayjs/en-au","30":"locales/dayjs/en-ca","31":"locales/dayjs/en-gb","32":"locales/dayjs/en-ie","33":"locales/dayjs/en-il","34":"locales/dayjs/en-in","35":"locales/dayjs/en-nz","36":"locales/dayjs/en-tt","37":"locales/dayjs/eo","38":"locales/dayjs/es","39":"locales/dayjs/es-do","40":"locales/dayjs/es-pr","41":"locales/dayjs/es-us","42":"locales/dayjs/et","43":"locales/dayjs/eu","44":"locales/dayjs/fa","45":"locales/dayjs/fi","46":"locales/dayjs/fo","47":"locales/dayjs/fr","48":"locales/dayjs/fr-ca","49":"locales/dayjs/fr-ch","50":"locales/dayjs/fy","51":"locales/dayjs/ga","52":"locales/dayjs/gd","53":"locales/dayjs/gl","54":"locales/dayjs/gom-latn","55":"locales/dayjs/gu","56":"locales/dayjs/he","57":"locales/dayjs/hi","58":"locales/dayjs/hr","59":"locales/dayjs/ht","60":"locales/dayjs/hu","61":"locales/dayjs/hy-am","62":"locales/dayjs/id","63":"locales/dayjs/is","64":"locales/dayjs/it","65":"locales/dayjs/it-ch","66":"locales/dayjs/ja","67":"locales/dayjs/jv","68":"locales/dayjs/ka","69":"locales/dayjs/kk","70":"locales/dayjs/km","71":"locales/dayjs/kn","72":"locales/dayjs/ko","73":"locales/dayjs/ku","74":"locales/dayjs/ky","75":"locales/dayjs/lb","76":"locales/dayjs/lo","77":"locales/dayjs/lt","78":"locales/dayjs/lv","79":"locales/dayjs/me","80":"locales/dayjs/mi","81":"locales/dayjs/mk","82":"locales/dayjs/ml","83":"locales/dayjs/mn","84":"locales/dayjs/mr","85":"locales/dayjs/ms","86":"locales/dayjs/ms-my","87":"locales/dayjs/mt","88":"locales/dayjs/my","89":"locales/dayjs/nb","90":"locales/dayjs/ne","91":"locales/dayjs/nl","92":"locales/dayjs/nl-be","93":"locales/dayjs/nn","94":"locales/dayjs/oc-lnc","95":"locales/dayjs/pa-in","96":"locales/dayjs/pl","97":"locales/dayjs/pt","98":"locales/dayjs/pt-br","99":"locales/dayjs/ro","100":"locales/dayjs/ru","101":"locales/dayjs/rw","102":"locales/dayjs/sd","103":"locales/dayjs/se","104":"locales/dayjs/si","105":"locales/dayjs/sk","106":"locales/dayjs/sl","107":"locales/dayjs/sq","108":"locales/dayjs/sr","109":"locales/dayjs/sr-cyrl","110":"locales/dayjs/ss","111":"locales/dayjs/sv","112":"locales/dayjs/sw","113":"locales/dayjs/ta","114":"locales/dayjs/te","115":"locales/dayjs/tet","116":"locales/dayjs/tg","117":"locales/dayjs/th","118":"locales/dayjs/tk","119":"locales/dayjs/tl-ph","120":"locales/dayjs/tlh","121":"locales/dayjs/tr","122":"locales/dayjs/tzl","123":"locales/dayjs/tzm","124":"locales/dayjs/tzm-latn","125":"locales/dayjs/ug-cn","126":"locales/dayjs/uk","127":"locales/dayjs/ur","128":"locales/dayjs/uz","129":"locales/dayjs/uz-latn","130":"locales/dayjs/vi","131":"locales/dayjs/x-pseudo","132":"locales/dayjs/yo","133":"locales/dayjs/zh","134":"locales/dayjs/zh-cn","135":"locales/dayjs/zh-hk","136":"locales/dayjs/zh-tw","137":"emojis","138":"icons","139":"locales/af-LC_MESSAGES-converse-po","140":"locales/ar-LC_MESSAGES-converse-po","141":"locales/bg-LC_MESSAGES-converse-po","142":"locales/ca-LC_MESSAGES-converse-po","143":"locales/cs-LC_MESSAGES-converse-po","144":"locales/da-LC_MESSAGES-converse-po","145":"locales/dayjs/index-d-ts","146":"locales/dayjs/types-d-ts","147":"locales/de-LC_MESSAGES-converse-po","148":"locales/eo-LC_MESSAGES-converse-po","149":"locales/es-LC_MESSAGES-converse-po","150":"locales/eu-LC_MESSAGES-converse-po","151":"locales/fi-LC_MESSAGES-converse-po","152":"locales/fr-LC_MESSAGES-converse-po","153":"locales/gl-LC_MESSAGES-converse-po","154":"locales/he-LC_MESSAGES-converse-po","155":"locales/hi-LC_MESSAGES-converse-po","156":"locales/hu-LC_MESSAGES-converse-po","157":"locales/id-LC_MESSAGES-converse-po","158":"locales/it-LC_MESSAGES-converse-po","159":"locales/ja-LC_MESSAGES-converse-po","160":"locales/lt-LC_MESSAGES-converse-po","161":"locales/mr-LC_MESSAGES-converse-po","162":"locales/nb-LC_MESSAGES-converse-po","163":"locales/nl-LC_MESSAGES-converse-po","164":"locales/nl_BE-LC_MESSAGES-converse-po","165":"locales/oc-LC_MESSAGES-converse-po","166":"locales/pl-LC_MESSAGES-converse-po","167":"locales/pt-LC_MESSAGES-converse-po","168":"locales/pt_BR-LC_MESSAGES-converse-po","169":"locales/ro-LC_MESSAGES-converse-po","170":"locales/ru-LC_MESSAGES-converse-po","171":"locales/th-LC_MESSAGES-converse-po","172":"locales/tr-LC_MESSAGES-converse-po","173":"locales/uk-LC_MESSAGES-converse-po","174":"locales/vi-LC_MESSAGES-converse-po","175":"locales/zh_CN-LC_MESSAGES-converse-po","176":"locales/zh_TW-LC_MESSAGES-converse-po"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"0":"locales/dayjs/af","1":"locales/dayjs/ar","2":"locales/dayjs/ar-dz","3":"locales/dayjs/ar-kw","4":"locales/dayjs/ar-ly","5":"locales/dayjs/ar-ma","6":"locales/dayjs/ar-sa","7":"locales/dayjs/ar-tn","8":"locales/dayjs/az","9":"locales/dayjs/be","10":"locales/dayjs/bg","11":"locales/dayjs/bi","12":"locales/dayjs/bm","13":"locales/dayjs/bn","14":"locales/dayjs/bo","15":"locales/dayjs/br","16":"locales/dayjs/bs","17":"locales/dayjs/ca","18":"locales/dayjs/cs","19":"locales/dayjs/cv","20":"locales/dayjs/cy","21":"locales/dayjs/da","22":"locales/dayjs/de","23":"locales/dayjs/de-at","24":"locales/dayjs/de-ch","25":"locales/dayjs/dv","26":"locales/dayjs/el","27":"locales/dayjs/en","28":"locales/dayjs/en-SG","29":"locales/dayjs/en-au","30":"locales/dayjs/en-ca","31":"locales/dayjs/en-gb","32":"locales/dayjs/en-ie","33":"locales/dayjs/en-il","34":"locales/dayjs/en-in","35":"locales/dayjs/en-nz","36":"locales/dayjs/en-tt","37":"locales/dayjs/eo","38":"locales/dayjs/es","39":"locales/dayjs/es-do","40":"locales/dayjs/es-pr","41":"locales/dayjs/es-us","42":"locales/dayjs/et","43":"locales/dayjs/eu","44":"locales/dayjs/fa","45":"locales/dayjs/fi","46":"locales/dayjs/fo","47":"locales/dayjs/fr","48":"locales/dayjs/fr-ca","49":"locales/dayjs/fr-ch","50":"locales/dayjs/fy","51":"locales/dayjs/ga","52":"locales/dayjs/gd","53":"locales/dayjs/gl","54":"locales/dayjs/gom-latn","55":"locales/dayjs/gu","56":"locales/dayjs/he","57":"locales/dayjs/hi","58":"locales/dayjs/hr","59":"locales/dayjs/ht","60":"locales/dayjs/hu","61":"locales/dayjs/hy-am","62":"locales/dayjs/id","63":"locales/dayjs/is","64":"locales/dayjs/it","65":"locales/dayjs/it-ch","66":"locales/dayjs/ja","67":"locales/dayjs/jv","68":"locales/dayjs/ka","69":"locales/dayjs/kk","70":"locales/dayjs/km","71":"locales/dayjs/kn","72":"locales/dayjs/ko","73":"locales/dayjs/ku","74":"locales/dayjs/ky","75":"locales/dayjs/lb","76":"locales/dayjs/lo","77":"locales/dayjs/lt","78":"locales/dayjs/lv","79":"locales/dayjs/me","80":"locales/dayjs/mi","81":"locales/dayjs/mk","82":"locales/dayjs/ml","83":"locales/dayjs/mn","84":"locales/dayjs/mr","85":"locales/dayjs/ms","86":"locales/dayjs/ms-my","87":"locales/dayjs/mt","88":"locales/dayjs/my","89":"locales/dayjs/nb","90":"locales/dayjs/ne","91":"locales/dayjs/nl","92":"locales/dayjs/nl-be","93":"locales/dayjs/nn","94":"locales/dayjs/oc-lnc","95":"locales/dayjs/pa-in","96":"locales/dayjs/pl","97":"locales/dayjs/pt","98":"locales/dayjs/pt-br","99":"locales/dayjs/ro","100":"locales/dayjs/ru","101":"locales/dayjs/rw","102":"locales/dayjs/sd","103":"locales/dayjs/se","104":"locales/dayjs/si","105":"locales/dayjs/sk","106":"locales/dayjs/sl","107":"locales/dayjs/sq","108":"locales/dayjs/sr","109":"locales/dayjs/sr-cyrl","110":"locales/dayjs/ss","111":"locales/dayjs/sv","112":"locales/dayjs/sw","113":"locales/dayjs/ta","114":"locales/dayjs/te","115":"locales/dayjs/tet","116":"locales/dayjs/tg","117":"locales/dayjs/th","118":"locales/dayjs/tk","119":"locales/dayjs/tl-ph","120":"locales/dayjs/tlh","121":"locales/dayjs/tr","122":"locales/dayjs/tzl","123":"locales/dayjs/tzm","124":"locales/dayjs/tzm-latn","125":"locales/dayjs/ug-cn","126":"locales/dayjs/uk","127":"locales/dayjs/ur","128":"locales/dayjs/uz","129":"locales/dayjs/uz-latn","130":"locales/dayjs/vi","131":"locales/dayjs/x-pseudo","132":"locales/dayjs/yo","133":"locales/dayjs/zh","134":"locales/dayjs/zh-cn","135":"locales/dayjs/zh-hk","136":"locales/dayjs/zh-tw","137":"emojis","138":"icons","139":"locales/af-LC_MESSAGES-converse-po","140":"locales/ar-LC_MESSAGES-converse-po","141":"locales/bg-LC_MESSAGES-converse-po","142":"locales/ca-LC_MESSAGES-converse-po","143":"locales/cs-LC_MESSAGES-converse-po","144":"locales/da-LC_MESSAGES-converse-po","145":"locales/dayjs/index-d-ts","146":"locales/dayjs/types-d-ts","147":"locales/de-LC_MESSAGES-converse-po","148":"locales/eo-LC_MESSAGES-converse-po","149":"locales/es-LC_MESSAGES-converse-po","150":"locales/eu-LC_MESSAGES-converse-po","151":"locales/fi-LC_MESSAGES-converse-po","152":"locales/fr-LC_MESSAGES-converse-po","153":"locales/gl-LC_MESSAGES-converse-po","154":"locales/he-LC_MESSAGES-converse-po","155":"locales/hi-LC_MESSAGES-converse-po","156":"locales/hu-LC_MESSAGES-converse-po","157":"locales/id-LC_MESSAGES-converse-po","158":"locales/it-LC_MESSAGES-converse-po","159":"locales/ja-LC_MESSAGES-converse-po","160":"locales/lt-LC_MESSAGES-converse-po","161":"locales/mr-LC_MESSAGES-converse-po","162":"locales/nb-LC_MESSAGES-converse-po","163":"locales/nl-LC_MESSAGES-converse-po","164":"locales/nl_BE-LC_MESSAGES-converse-po","165":"locales/oc-LC_MESSAGES-converse-po","166":"locales/pl-LC_MESSAGES-converse-po","167":"locales/pt-LC_MESSAGES-converse-po","168":"locales/pt_BR-LC_MESSAGES-converse-po","169":"locales/ro-LC_MESSAGES-converse-po","170":"locales/ru-LC_MESSAGES-converse-po","171":"locales/sv-LC_MESSAGES-converse-po","172":"locales/th-LC_MESSAGES-converse-po","173":"locales/tr-LC_MESSAGES-converse-po","174":"locales/uk-LC_MESSAGES-converse-po","175":"locales/vi-LC_MESSAGES-converse-po","176":"locales/zh_CN-LC_MESSAGES-converse-po","177":"locales/zh_TW-LC_MESSAGES-converse-po"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -50654,29 +50654,33 @@ var map = {
 		536,
 		170
 	],
-	"./th/LC_MESSAGES/converse.po": [
+	"./sv/LC_MESSAGES/converse.po": [
 		537,
 		171
 	],
-	"./tr/LC_MESSAGES/converse.po": [
+	"./th/LC_MESSAGES/converse.po": [
 		538,
 		172
 	],
-	"./uk/LC_MESSAGES/converse.po": [
+	"./tr/LC_MESSAGES/converse.po": [
 		539,
 		173
 	],
-	"./vi/LC_MESSAGES/converse.po": [
+	"./uk/LC_MESSAGES/converse.po": [
 		540,
 		174
 	],
-	"./zh_CN/LC_MESSAGES/converse.po": [
+	"./vi/LC_MESSAGES/converse.po": [
 		541,
 		175
 	],
-	"./zh_TW/LC_MESSAGES/converse.po": [
+	"./zh_CN/LC_MESSAGES/converse.po": [
 		542,
 		176
+	],
+	"./zh_TW/LC_MESSAGES/converse.po": [
+		543,
+		177
 	]
 };
 function webpackAsyncContext(req) {
@@ -51209,7 +51213,7 @@ var map = {
 		62
 	],
 	"./index.d.ts": [
-		543,
+		544,
 		145
 	],
 	"./is": [
@@ -51685,7 +51689,7 @@ var map = {
 		121
 	],
 	"./types.d.ts": [
-		544,
+		545,
 		146
 	],
 	"./tzl": [
@@ -69547,7 +69551,7 @@ const converse_core_converse = {
    */
   '___': str => str
 };
-converse_core_converse.VERSION_NAME = "v7.0.1dev";
+converse_core_converse.VERSION_NAME = "v7.0.1";
 Object.assign(converse_core_converse, Events); // Make converse pluggable
 
 pluggable.enable(converse_core_converse, '_converse', 'pluggable');
@@ -74327,7 +74331,7 @@ converse.plugins.add('converse-emoji', {
             converse.emojis.initialized = true;
             const {
               default: json
-            } = await __webpack_require__.e(/* import() | emojis */ 137).then(__webpack_require__.t.bind(null, 546, 3));
+            } = await __webpack_require__.e(/* import() | emojis */ 137).then(__webpack_require__.t.bind(null, 547, 3));
             converse.emojis.json = json;
             converse.emojis.by_sn = Object.keys(json).reduce((result, cat) => Object.assign(result, json[cat]), {});
             converse.emojis.list = Object.values(converse.emojis.by_sn);
@@ -87724,7 +87728,9 @@ const emoji_picker_header = o => {
 };
 
 const emoji_item = o => {
-  return lit_html_html(emoji_picker_templateObject3(), o.shouldBeHidden(o.emoji.sn) ? 'hidden' : '', o.emoji.sn, o.emoji.sn, o.insertEmoji, o.emoji.sn, emoji_picker_u.shortnamesToEmojis(o.emoji.sn));
+  return lit_html_html(emoji_picker_templateObject3(), o.shouldBeHidden(o.emoji.sn) ? 'hidden' : '', o.emoji.sn, o.emoji.sn, o.insertEmoji, o.emoji.sn, emoji_picker_u.shortnamesToEmojis(o.emoji.sn, {
+    'add_title_wrapper': true
+  }));
 };
 
 const tpl_search_results = o => {
@@ -87749,7 +87755,9 @@ const tpl_all_emojis = o => {
 };
 
 const skintone_emoji = o => {
-  return lit_html_html(emoji_picker_templateObject7(), o.skintone, o.current_skintone === o.skintone ? 'picked' : '', o.skintone, o.onSkintonePicked, emoji_picker_u.shortnamesToEmojis(':' + o.skintone + ':'));
+  return lit_html_html(emoji_picker_templateObject7(), o.skintone, o.current_skintone === o.skintone ? 'picked' : '', o.skintone, o.onSkintonePicked, emoji_picker_u.shortnamesToEmojis(':' + o.skintone + ':', {
+    'add_title_wrapper': true
+  }));
 };
 
 const tpl_emoji_picker = o => {
@@ -87988,7 +87996,9 @@ class emoji_picker_EmojiPicker extends element_CustomElement {
       'query': this.query,
       'search_results': this.search_results,
       'render_emojis': this.render_emojis,
-      'sn2Emoji': shortname => components_emoji_picker_u.shortnamesToEmojis(this.getTonedShortname(shortname))
+      'sn2Emoji': shortname => components_emoji_picker_u.shortnamesToEmojis(this.getTonedShortname(shortname), {
+        'add_title_wrapper': true
+      })
     });
   }
 
@@ -88719,7 +88729,7 @@ function font_awesome_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = st
 class font_awesome_FontAwesome extends element_CustomElement {
   constructor() {
     super();
-    const promise = __webpack_require__.e(/* import() | icons */ 138).then(__webpack_require__.t.bind(null, 547, 7));
+    const promise = __webpack_require__.e(/* import() | icons */ 138).then(__webpack_require__.t.bind(null, 548, 7));
     this.data = promise.then(d => lit_html_html(font_awesome_templateObject(), unsafeSVG(d.default())));
   }
 
