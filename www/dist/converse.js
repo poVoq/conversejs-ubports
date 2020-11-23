@@ -69551,7 +69551,7 @@ const converse_core_converse = {
    */
   '___': str => str
 };
-converse_core_converse.VERSION_NAME = "v7.0.1";
+converse_core_converse.VERSION_NAME = "v7.0.2";
 Object.assign(converse_core_converse, Events); // Make converse pluggable
 
 pluggable.enable(converse_core_converse, '_converse', 'pluggable');
@@ -77865,7 +77865,7 @@ converse.plugins.add('converse-muc', {
          *     }
          * );
          */
-        async open(jids, attrs, force = false) {
+        async open(jids, attrs = {}, force = false) {
           await converse_core_api.waitUntil('chatBoxesFetched');
 
           if (jids === undefined) {
@@ -98810,7 +98810,7 @@ function headline_panel_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = 
 
 const converse_headlines_view_u = converse.env.utils;
 const HeadlinesBoxView = ChatBoxView.extend({
-  className: 'chatbox headlines',
+  className: 'chatbox headlines hidden',
   events: {
     'click .close-chatbox-button': 'close',
     'click .toggle-chatbox-button': 'minimize',
