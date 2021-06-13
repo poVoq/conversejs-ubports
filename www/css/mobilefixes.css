@@ -8,12 +8,14 @@ and to solve other issues related to running it in a qtwebview container
     padding-top: 10px;
 }
 
-/* Remove hats display from MUC partificant list */
+/* Remove hats display from MUC main screen (disabled via setting now)
 #conversejs, #conversejs-bg, .converse-fullscreen {
   --occupants-features-display: none;
   --occupants-padding: 0.5em;
 }
+*/
 
+/* Remove hats display from MUC participant list*/
 #conversejs .chatroom .box-flyout .chatroom-body .occupants ul li.occupant .occupant-nick-badge .occupant-badges, #conversejs.converse-embedded .chatroom .box-flyout .chatroom-body .occupants ul li.occupant .occupant-nick-badge .occupant-badges {
   display: none;
 }

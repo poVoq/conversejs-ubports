@@ -1,12 +1,13 @@
 ConverseJS-ubports Changelog
 ================
-v0.3.0 (unreleased)
+v0.3.2 (unreleased)
 ---------------------------
- * Upgrade to ConverseJS 7.0: https://github.com/conversejs/converse.js/releases/tag/v7.0.0
+ * Upgrade to ConverseJS 7.0.6: https://github.com/conversejs/converse.js/releases/tag/v7.0.6
  * Basic login page styling with Bootstrap4
  * Hide MUC participant sidebar by default
- * Removed all community-plugins (new "packages" directory not working somehow)
- * Known issue: 1:1 chats are broken (upstream 7.0 issue)
+ * Removed all community plugin (due to bug)
+ * Switch to "fullscreen" mode (less buggy)
+ * various fixes related to presence stanzas
  
 v0.2.1
 ---------------------------
