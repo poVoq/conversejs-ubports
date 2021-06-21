@@ -1,8 +1,8 @@
 # ConverseJS for Ubuntu Touch
 
-This is a HTML5 wrapper for the [ConverseJS](https://github.com/conversejs/converse.js/) Jabber / XMPP chat client to run it on  Ubuntu Touch mobile devices. Thanks a lot to the ConverseJS team, they did all the hard work!
+This is a HTML5 wrapper for the [ConverseJS](https://github.com/conversejs/converse.js/) Jabber / XMPP chat client to run it on Ubuntu Touch mobile devices. Thanks a lot to the ConverseJS team, they did all the hard work!
 
-Please note that this is just a HTML5 wrapper with minimal CSS changes to the ConverseJS mobile view mode. Please report issues related to the actual Javascript XMPP client in the upstream issue tracker linked above.
+Please note that this is just a HTML5 wrapper with minimal CSS changes to the ConverseJS fullscreen view mode. Please report issues related to the actual Javascript XMPP client in the upstream issue tracker linked above.
 
 [![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/conversejs.povoq)
 
@@ -21,7 +21,7 @@ Please note that this is just a HTML5 wrapper with minimal CSS changes to the Co
 - [ ] Alternative theme support?
 
 ## Future plans
-If I can get some help to adapt a Ubports push-notification compatible XEP-0357: Push Notifications Push Service application, I would like to enable this in ConverseJS and might host it together with an Ejabberd XMPP server.
+If I can get some help to adapt a Ubports push-notification compatible XEP-0357: Push Notifications Push Service application, I would like to enable this in ConverseJS.
 
 ## License
 
